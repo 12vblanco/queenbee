@@ -75,6 +75,7 @@
 
 // Offers
 .offers {
+
     height: 60vh;
     width: 100%;
 
@@ -91,9 +92,11 @@
             width: 24rem;
             cursor: pointer;
             transition: transform .6s linear;
+            
 
             &__front {
                 transform: perspective(1200px) rotateY(0deg);
+                box-shadow: 4px 8px 12px $color-dark;
 
                 &--front1 {
                     position: relative;
@@ -105,6 +108,7 @@
                     url(../images/home__card--breakfast.jpg);
                     background-size: cover;
                     background-position: center;
+                    
     
                     p {
                         color: #fff;
@@ -170,7 +174,8 @@
                     rgba($color-secondary, .8),
                     rgba($color-secondary-dark, .8));
                 transform: perspective(600px) rotateY(180deg);
-            
+                box-shadow: 4px 8px 12px $color-dark;
+                
                 &--back1 {
                     text-align: center;
                     padding: 4rem;
@@ -233,8 +238,65 @@
                 backface-visibility: hidden;
                 position: absolute;
                 transition: transform .6s linear;
-                border-radius: 5px;
+                border-radius: $border-pic;
                 text-align: center;
             }
 }
 }}
+
+// Course Preview
+
+.coursepreview {
+    height: 85vh;
+    width: 70%;
+    margin: 0 auto;
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-secondary, .8),
+        rgba($color-secondary-dark, .8)),
+        url(../images/home__coursepreview--bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    box-shadow: 4px 9px 16px rgba(0,0,0,0.7);
+    border-radius: $border-pic;
+    &__box {
+        
+        display: flex;
+        justify-content: space-evenly;
+        vertical-align: middle;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+    &__video {
+        display: flex;
+        width: 340px;
+        height: 260px;
+        background-color: #fff;
+        margin-top: 8%;
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-size: 1.6rem;
+        font-weight: 700;
+        max-width: 40%;
+
+        &--btn {
+            margin-top: 2rem;
+            width: 10rem;
+            text-align: center;
+            padding: 0.8rem 1.4rem;
+            border-radius: 22px;
+            background-color: $color-secondary-dark;
+            color: #fff;
+        }
+    }
+}
+
