@@ -11,6 +11,7 @@
     background-position: center;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+    border-radius: $border-pic--l;
 
     &__box {
         @include box;
@@ -92,6 +93,7 @@
             width: 24rem;
             cursor: pointer;
             transition: transform .6s linear;
+
             
 
             &__front {
@@ -238,7 +240,7 @@
                 backface-visibility: hidden;
                 position: absolute;
                 transition: transform .6s linear;
-                border-radius: $border-pic;
+                border-radius: $border-pic--s;
                 text-align: center;
             }
 }
@@ -259,7 +261,7 @@
     background-position: bottom;
     position: relative;
     box-shadow: 4px 9px 16px rgba(0,0,0,0.7);
-    border-radius: $border-pic;
+    border-radius: $border-pic--s;
     &__box {
         
         display: flex;
@@ -271,15 +273,17 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-
+        align-items: center;
+        justify-content: center;
     }
+
     &__video {
         display: flex;
-        width: 340px;
-        height: 260px;
+        width: auto;
         background-color: #fff;
-        margin-top: 8%;
-    }
+        margin-right: 4rem;
+        }
+
     &__text {
         display: flex;
         flex-direction: column;
@@ -287,8 +291,12 @@
         font-size: 1.6rem;
         font-weight: 700;
         max-width: 40%;
+        margin-left: 6rem;
+       
+         
 
         &--btn {
+
             margin-top: 2rem;
             width: 10rem;
             text-align: center;
@@ -296,6 +304,7 @@
             border-radius: 22px;
             background-color: $color-secondary-dark;
             color: #fff;
+            
         }
     }
 }
