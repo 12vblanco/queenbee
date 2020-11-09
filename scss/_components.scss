@@ -1,0 +1,146 @@
+// Navbar
+.navbar {
+    width: 100%;
+
+    &__container {
+        display: flex;
+        max-width: 1240px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    
+        .logo {
+            display: flex;
+            padding-bottom: 1rem;
+            &__img {
+                margin: 1rem 0.4rem 0 0;
+                }
+            &__img--png {
+                    width: 100px;
+                    height: inherit;
+                    transition: all .2s ease-in;
+
+                }
+                &__img--png:hover {
+                    transform: rotate(10deg) scale(1.1);
+                }
+    
+            &__text {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                position: relative;
+                top: 0.7rem;
+    
+                h1 {
+                    font-family: $font-secondary;
+                    text-transform: none;
+                    font-size: 4.4rem;
+                    transition: all .2 ease-in;
+                   }
+                h2 {
+                    font-size: 1.4rem;
+                    margin-top: -0.2rem;
+                    padding-left: 1.1rem;
+                    letter-spacing: .4rem;
+                   }
+                h3 {
+                    margin-top: -0.2rem;
+                    letter-spacing: .4rem;
+                    font-size: 1.4rem;
+                    cursor: pointer;
+                    
+                    a {
+                        color: $color-primary;
+                        transition: all .2s ease-in;
+                    }
+                    a:hover {
+                        font-size: 1.6rem;
+                        color: (lighten($color-primary, $amount: 20%));
+                    }
+                    a:active {
+                        font-size: 1.5rem;
+                    }
+                   }
+                } 
+            }
+    
+            .menu {
+                    display: flex;
+    
+                &__items {
+                    list-style: none;
+                    .active {
+                        color: $color-primary;
+                        
+                    }
+    
+                    &-item {
+                        display: inline-block;
+                        font-size: 1.7rem;
+                        font-weight: 900;
+                        font-family: 'Lato' sans-serif;
+                        padding-right: 2rem;
+                        color: $color-dark;
+                        text-transform: uppercase;
+                        position: relative;
+                        top: -.8rem;
+                        
+                        a {
+                        transition: linear .3s;
+                        }
+                        
+                        a:hover {
+                            color: $color-primary;
+                        }
+
+                        & img {
+                            width: 40px;
+                            position: relative;
+                            top: 0.9rem;
+                            margin-right: -.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+// Buttom Main
+@mixin btn {
+        margin: 0 auto;
+        font-weight: 900;
+        letter-spacing: 0.2rem;
+        text-transform: uppercase;
+        border-radius: 120px;
+        animation-name: fadeInButton;
+        animation-duration: 5s;
+        background-color: $color-white;
+        color: $color-dark;
+        cursor: pointer;
+        transition: all .4s ease;
+        &:hover{
+            box-shadow:2px 12px 16px rgba(0,0,0,0.2);
+            transform : translateY(-3px) scaleX(1.01);
+            background-color: $color-secondary-dark;
+            color: white;
+        }
+        &:active{
+        box-shadow:0px 5px 10px rgba(0,0,0,0.2);
+        transform:translateY(-1px);
+        }}
+
+// Container Box
+@mixin box {
+        width: 100%;
+        text-align: center;
+        font-family: 'lato', sans-serif;
+        font-weight: 600;
+        color: $color-white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+

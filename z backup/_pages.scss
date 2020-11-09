@@ -1,0 +1,45 @@
+.header {
+    height: 80vh;
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-secondary, .8),
+        rgba($color-secondary-dark, .8)),
+        url(../images/cafe6.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+
+    &__box {
+        @include box;
+    
+    &--h1 {
+        font-size: 7rem;
+        letter-spacing: 1.2rem;
+        text-transform: uppercase;
+        animation-name: fromTop;
+        animation-duration: 3s;
+    }
+    &--h2 {
+        width: 100%;
+        font-size: 1.6rem;
+        letter-spacing: 1.46rem;
+        padding-left: 0.4rem;
+        text-transform: uppercase;
+        padding-bottom: 4rem;
+        animation-name: fadeIn;
+        animation-duration: 3s;
+    }
+    &--btn {
+        @include btn;
+        font-size: 1.7rem;
+        width: 20rem;
+        padding: 1.6rem 1.8rem;
+    }
+}
+}
+// Offers
+
+.offers {
+    height: 50vh;
+}
