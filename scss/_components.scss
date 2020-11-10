@@ -35,20 +35,21 @@
                 position: relative;
                 top: 0.7rem;
     
-                h1 {
+                &--h1 {
                     font-family: $font-secondary;
                     text-transform: none;
                     font-size: 4.4rem;
                     transition: all .2 ease-in;
                     
                    }
-                h2 {
+                &--h2 {
                     font-size: 1.4rem;
                     margin-top: -0.2rem;
                     padding-left: 1.1rem;
                     letter-spacing: .4rem;
+                    font-weight: 700;
                    }
-                h3 {
+                &--tel {
                     margin-top: -0.2rem;
                     letter-spacing: .4rem;
                     font-size: 1.4rem;
