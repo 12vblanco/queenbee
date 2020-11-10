@@ -364,6 +364,8 @@
         width: 100%;
         height: auto;
         padding: 0 2rem;
+        padding-top: 2rem;
+
         
         .banner1, .banner2, .banner3 {
             width: 65vw;
@@ -390,15 +392,15 @@
     }
 
 .fed {
-    width: auto;
-    height: 55.2rem;
-    background-color: $color-secondary-dark;
-    padding: 0.6rem;
-    border-radius: $border-pic--s;
+    // width: auto;
+    // height: 55.2rem;
+    // background-color: $color-secondary-dark;
+    // padding: 0.6rem;
+    // border-radius: $border-pic--s;
     box-shadow:2px 12px 16px rgba(0,0,0,0.2);
 }
 .twitter-timeline {
-    height: 54rem !important;
-    border: 0px
+    height: 62rem !important;
+//     border: 1.2rem $color-secondary-dark solid; 
 }
 
