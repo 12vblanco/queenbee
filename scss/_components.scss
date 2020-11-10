@@ -1,10 +1,11 @@
 // Navbar
 .navbar {
     width: 100%;
+    overflow: hidden;
 
     &__container {
         display: flex;
-        max-width: 1240px;
+        max-width: 124rem;
         margin: 0 auto;
         align-items: center;
         justify-content: space-between;
@@ -16,7 +17,7 @@
                 margin: 1rem 0.4rem 0 0;
                 }
             &__img--png {
-                    width: 100px;
+                    width: 10rem;
                     height: inherit;
                     transition: all .2s ease-in;
 
@@ -37,6 +38,7 @@
                     text-transform: none;
                     font-size: 4.4rem;
                     transition: all .2 ease-in;
+                    
                    }
                 h2 {
                     font-size: 1.4rem;
@@ -55,11 +57,11 @@
                         transition: all .2s ease-in;
                     }
                     a:hover {
-                        font-size: 1.6rem;
+                        font-size: 1.55rem;
                         color: (lighten($color-primary, $amount: 20%));
                     }
                     a:active {
-                        font-size: 1.5rem;
+                        font-size: 1.45rem;
                     }
                    }
                 } 
@@ -95,7 +97,7 @@
                         }
 
                         & img {
-                            width: 40px;
+                            width: 4rem;
                             position: relative;
                             top: 0.9rem;
                             margin-right: -.6rem;
@@ -113,7 +115,7 @@
         font-weight: 900;
         letter-spacing: 0.2rem;
         text-transform: uppercase;
-        border-radius: 120px;
+        border-radius: 12rem;
         animation-name: fadeInButton;
         animation-duration: 5s;
         background-color: $color-white;
@@ -164,24 +166,40 @@
         padding: 2rem;
         
         .banner1 {
-            width: 100%;
-            height: 160px;
+            width: 74rem;
+            height: 16rem;
             margin-bottom: 3rem;
-            background-color: yellow;
+            margin-top: 1rem;
+
+            img {
+                max-width: 74rem;
+                border-radius: $border-pic--s;
+
+            }
 
         }
         .banner2 {
-            width: 100%;
-            height: 160px;
+            width: 74rem;
+            height: 16rem;
             margin-bottom: 3rem;
-            background-color: yellow;
+
+            img {
+                max-width: 74rem;
+                border-radius: $border-pic--s;
+
+            }
 
         }
         .banner3 {
-            width: 100%;
-            height: 160px;
-            margin-bottom: 0rem;
-            background-color: yellow;
+            width: 74rem;
+            height: 16rem;
+            margin-bottom: 3rem;
+
+            img {
+                max-width: 74rem;
+                border-radius: $border-pic--s;
+
+            }
 
         }
     }
@@ -190,12 +208,15 @@
 }
 
 .fed {
-    width: 20%;
-    height: auto;
-    background-color: violet;
-    padding: 2rem;
+    width: 22%;
+    height: 59rem;
+    background-color: $color-secondary-dark;
+    padding: 1rem;
+    border-radius: $border-pic--s;
 }
-
+.twitter-timeline {
+    height: 57rem !important;
+}
 // Footer
 .footer {
     width: 100%;
@@ -227,12 +248,12 @@
     text-align: center;
 
     .logo__img--png {
-        width: 15rem;
+        width: 12rem;
     }
     .logo__text {
         h1{
             font-family: $font-secondary;
-            font-size: 5rem;
+            font-size: 4.4rem;
         }
         h2, h3 {
             font-size: 1.8rem;

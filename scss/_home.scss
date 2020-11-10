@@ -97,7 +97,7 @@
             
 
             &__front {
-                transform: perspective(1200px) rotateY(0deg);
+                transform: perspective(120rem) rotateY(0deg);
                 box-shadow: 4px 8px 12px $color-dark;
 
                 &--front1 {
@@ -175,7 +175,7 @@
                     to right top,
                     rgba($color-secondary, .8),
                     rgba($color-secondary-dark, .8));
-                transform: perspective(600px) rotateY(180deg);
+                transform: perspective(60rem) rotateY(180deg);
                 box-shadow: 4px 8px 12px $color-dark;
                 
                 &--back1 {
@@ -198,7 +198,7 @@
             &__front--btn {
                     margin: 0 auto;
                     background-color: #fff;
-                    border-radius: 22px;
+                    border-radius: 2.2rem;
                     font-size: 1.2rem;
                     padding: 1rem 1.2rem;
                     position: absolute;
@@ -222,10 +222,10 @@
                 }
             
             &:hover > .card__front {
-                transform: perspective(1200px) rotateY(-180deg);
+                transform: perspective(120rem) rotateY(-180deg);
             }
             &:hover > .card__back {
-                transform: perspective(1200px) rotateY(0deg) scale(1.1);
+                transform: perspective(120rem) rotateY(0deg) scale(1.1);
             }
             .btn--back {
                 position: absolute;
@@ -301,7 +301,7 @@
             width: 10rem;
             text-align: center;
             padding: 0.8rem 1.4rem;
-            border-radius: 22px;
+            border-radius: 2.2rem;
             background-color: $color-secondary-dark;
             color: #fff;
             
