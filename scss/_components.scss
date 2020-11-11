@@ -188,20 +188,24 @@
 
         }
         .logo__text {
-            h1{
+            li {
+                list-style: none;
+            }
+            .footer__name {
                 font-family: $font-secondary;
                 font-size: 4.3rem;
             }
-            h2, h3 {
+            .footer__subname {
                 font-size: 1.8rem;
             }
-            h4 {
+            .footer__address {
                 font-size: 1.4rem;
             }
-            .phone {
+            .footer__phone {
                 a {
                     color: $color-primary;
                     transition: all .2s ease-in;
+                    font-size: 1.8rem;
                 }
                 a:hover {
                     color: (lighten($color-primary, $amount: 5%));
@@ -216,11 +220,14 @@
     &__opening {
 
         text-align: center;
-        h2 {
+        li {
+            list-style: none;
+        }
+        &--opening {
             font-size: 2.2rem;
             color: $color-primary;
         }
-        h3 {
+        &--days {
             font-size: 1.8rem;
         }
     }
@@ -228,13 +235,13 @@
     &__newsletter {
         text-align: center;
 
-        h1 {
+        &--title {
             font-size: 2.8rem;
             margin-left: 0.2rem;
             letter-spacing: 0.1rem;
         }
         
-        h2 {
+        &--discount {
             margin: -0.6rem 1rem 1rem 1rem;
             letter-spacing: 0.03rem;
             color: $color-primary;
