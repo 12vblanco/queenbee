@@ -2,6 +2,8 @@
 
 .header {
     height: 80vh;
+    background-color: $color-secondary-dark;
+    color: $color-white;
     background-image: linear-gradient(
         to right top,
         rgba($color-secondary, .8),
@@ -107,6 +109,8 @@
                 &--front1 {
                     position: relative;
                     height: 100%;
+                    background-color: $color-secondary-dark;
+                    color: $color-white;
                     background-image: linear-gradient(
                     to right top,
                     rgba($color-secondary, .6),
@@ -140,6 +144,8 @@
                 &--front2 {
                     position: relative;
                     height: 100%;
+                    background-color: $color-secondary-dark;
+                    color: $color-white;
                     background-image: linear-gradient(
                     to right top,
                     rgba($color-secondary, .6),
@@ -172,6 +178,8 @@
                 &--front3 {
                     position: relative;
                     height: 100%;
+                    background-color: $color-secondary-dark;
+                    color: $color-white;
                     background-image: linear-gradient(
                     to right top,
                     rgba($color-secondary, .6),
@@ -203,6 +211,8 @@
                 }
             }
             &__back {
+                background-color: $color-secondary-dark;
+                color: $color-white;
                 background-image: linear-gradient(
                     to right top,
                     rgba($color-secondary, .8),
@@ -263,6 +273,7 @@
                 transform: perspective(120rem) rotateY(0deg) scale(1.2);
             }
             .btn--back {
+                
                 @include btn__solo;
                 width: 12rem;
                 margin: 0 auto;
@@ -294,6 +305,8 @@
     max-width: 900px;
     height: 60vh;
     margin: 0 auto;
+    background-color: $color-secondary-dark;
+    color: $color-white;
     background-image: linear-gradient(
         to right top,
         rgba($color-secondary, .8),
