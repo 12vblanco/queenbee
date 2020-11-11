@@ -89,7 +89,9 @@
         padding: 16rem 0rem;
         display: flex;
         justify-content: space-evenly;
-
+        h1 {
+            display: none;
+        }
         .card {
             height: 30rem;
             width: 24rem;
