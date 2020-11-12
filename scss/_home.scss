@@ -77,7 +77,6 @@
         }}
     }
 }
-
 // Offers
 .offers {
     height: auto;
@@ -100,8 +99,6 @@
             cursor: pointer;
             transition: transform .6s linear;
 
-            
-
             &__front {
                 transform: perspective(120rem) rotateY(0deg);
                 box-shadow: $shadow;
@@ -118,7 +115,6 @@
                     url(../images/home__card--breakfast-x1.jpg);
                     background-size: cover;
                     background-position: center;
-                    
     
                     h2 {
                         color: #fff;
@@ -129,7 +125,6 @@
                         top: 2rem;
                         font-weight: 900;
                         padding: 1rem 2rem 5rem 2rem;
-
                     }
                     p {
                         color: #fff;
@@ -138,7 +133,6 @@
                         
                         font-weight: 500;
                         padding: 0rem 1rem 1rem 1rem;
-
                     }
                 }
                 &--front2 {
@@ -163,7 +157,6 @@
                         top: 2rem;
                         font-weight: 900;
                         padding: 1rem 2rem 5rem 2rem;
-
                     }
                     p {
                         color: #fff;
@@ -172,7 +165,6 @@
                         
                         font-weight: 500;
                         padding: 0rem 1rem 1rem 1rem;
-
                     }
                 }
                 &--front3 {
@@ -197,16 +189,13 @@
                         top: 2rem;
                         font-weight: 900;
                         padding: 0rem 2rem 4rem 2rem;
-
                     }
                     p {
                         color: #fff;
                         font-size: 1.4rem;
                         letter-spacing: 0.1rem;
-                        
                         font-weight: 500;
                         padding: 0rem 1.4rem 1rem 1.4rem;
-
                     }
                 }
             }
@@ -248,24 +237,9 @@
                     padding: 1rem 1.2rem;
                     position: absolute;
                     bottom: 3rem;
-                    left: 7.2rem;
-                    // transform: translate(-50%, -50%);
-                    // text-transform: uppercase;
+                    left: 7.8rem;
                     font-weight: 700;
-                    // transition: all .3s linear;
-
-                    // &:hover{
-                    //     box-shadow: $shadow;
-                    //     transform : translateY(-3px) scaleX(1.01);
-                    //     background-color: $color-secondary-dark;
-                    //     color: white;
-                    // }
-                    // &:active{
-                    // box-shadow: $shadow;
-                    // transform:translateY(-1px);
-                    // }
                 }
-            
             &:hover > .card__front {
                 transform: perspective(120rem) rotateY(-180deg) scale(1.2);
             }
@@ -279,15 +253,11 @@
                 margin: 0 auto;
                 position: absolute;
                     bottom: 3rem;
-                    left: 6.6rem;
-                // position: absolute;
-                // top: 82%;
-                // left: 50%;
-                // transform: translate(-50%, -50%);
+                    left: 6.8rem;
             }
             .card__front, .card__back {
-                width: 24rem;
                 height: 30rem;
+                width: 24rem;
                 overflow: hidden;
                 backface-visibility: hidden;
                 position: absolute;
@@ -297,9 +267,7 @@
             }
 }
 }}
-
 // Course Preview
-
 .coursepreview {
     width: 80%;
     max-width: 900px;
@@ -352,23 +320,16 @@
         padding: 1rem 3.8rem 0 0;
         text-align: center;
     }
-       
-         
-
         .coursepreview__text--btn {
             font-weight: 900;
             width: 14rem;
             padding: 1.2rem 1.6rem;
             font-size: 1.6rem;
-            
 
             @include btn__solo;
             margin-top: 3rem;
         }}
         
-    
-
-
 // Banners
 .banners {
     width: 100%;
@@ -404,20 +365,10 @@
                     transform: scale(1.06);
                 }
             }
-
         }
-        
-            
-
         }
     }
-
 .fed {
-    // width: auto;
-    // height: 55.2rem;
-    // background-color: $color-secondary-dark;
-    // padding: 0.6rem;
-    // border-radius: $border-pic--s;
     box-shadow: $shadow;
 }
 .twitter-timeline {
