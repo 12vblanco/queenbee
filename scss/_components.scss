@@ -55,7 +55,7 @@
                     font-size: 1.4rem;
                     cursor: pointer;
                     font-weight: 900;
-                    a {
+                    a:link, a:visited {
                         color: $color-primary;
                         transition: all .2s ease-in;
                     }
