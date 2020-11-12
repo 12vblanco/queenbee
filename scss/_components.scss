@@ -97,7 +97,7 @@
                             margin-left: 1rem;
                         }
                         
-                        a {
+                        a:link, a:visited {
                         transition: linear .3s;
                         }
                         
@@ -219,6 +219,21 @@
                 margin: .6rem 1.2rem;
                 list-style: none;
                 font-size: 3rem;
+                a:link, a:visited {
+                    transition: linear .3s;
+                    }
+                    
+                    a:hover {
+                        color: $color-primary;
+                    }
+    
+                    & img {
+                        width: 4rem;
+                        position: relative;
+                        top: 0.9rem;
+                        margin-right: -.6rem;
+                        
+                    }
             }
         }
         .logo__img--png {
@@ -303,6 +318,21 @@
         &--link {
             font-size: 1.8rem;
             margin-top: 1rem;
+            a:link, a:visited {
+                transition: linear .3s;
+                }
+                
+                a:hover {
+                    color: $color-primary;
+                }
+
+                & img {
+                    width: 4rem;
+                    position: relative;
+                    top: 0.9rem;
+                    margin-right: -.6rem;
+                    
+                }
         }
     }
 
