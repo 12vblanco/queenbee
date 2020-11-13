@@ -3,7 +3,7 @@
 .header {
     height: 80vh;
     background-color: $color-secondary-dark;
-    color: $color-white;
+    color: $color-white; 
     background-image: linear-gradient(
         to right top,
         rgba($color-secondary, .8),
@@ -14,6 +14,8 @@
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     border-radius: $border-pic--l;
+        overflow: hidden;
+
 
     &__box {
         @include box;
