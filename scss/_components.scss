@@ -73,7 +73,7 @@
     
             .menu {
                     display: flex;
-                    display: none;
+                    // display: none;
                 &__items {
                     list-style: none;
                     .active {
@@ -129,13 +129,12 @@
 }
 
 .burger__menu {
-    // display: none;
+    display: none;
     position: absolute;
     top: 4.8rem;
     right: 0rem;
     z-index: 1;
     transition: all .5s ease-in;
-    // display: none;
 
 
     &--check:checked + .burger__menu--burger {
