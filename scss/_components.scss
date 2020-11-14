@@ -376,6 +376,7 @@
 
     @include respond(ph) {
         clip-path: polygon(50% 6%, 100% 0%, 100% 100%, 0 100%, 0 0);
+        margin-top: 10rem;
     }
 }
 
