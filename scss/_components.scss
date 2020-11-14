@@ -74,6 +74,13 @@
     
             .menu {
                     display: flex;
+
+                    @include respond(dsk) { // width < 900?
+                        display: none; //1 rem = 8px, 8/16 = 50%
+                    }
+                    @include respond(ph) {
+                        display: none;
+                    }
                     // display: none;
                 &__items {
                     list-style: none;
@@ -138,6 +145,12 @@
     transition: all .5s ease-in;
     backface-visibility: hidden;
 
+    @include respond(dsk) { // width < 900?
+        display: unset; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(ph) {
+        display: unset;
+    }
 
     &--check:checked + .burger__menu--burger {
         transform: rotate(135deg);

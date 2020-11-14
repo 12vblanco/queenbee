@@ -1,19 +1,19 @@
 @import "variables";
 
-// @mixin respond($breakpoint) {
-//     @if $breakpoint == ph {
-//         @media only screen and (max-width: 37.5em) { @content };    //600px
-//     }
-//     @if $breakpoint == tp {
-//         @media only screen and (max-width: 59.37em) { @content };     //950px
-//     }
-//     @if $breakpoint == dsk {
-//         @media only screen and (max-width: 112.5em) { @content };    //1800px
-//     }
-//     @if $breakpoint == lrg {
-//         @media only screen and (min-width: 112.51em) { @content };    //1800
-//     }
-// }
+@mixin respond($breakpoint) {
+    @if $breakpoint == ph {
+        @media only screen and (max-width: 37.5em) { @content };    //600px
+    }
+    @if $breakpoint == tp {
+        @media only screen and (max-width: 59.37em) { @content };     //950px
+    }
+    @if $breakpoint == dsk {
+        @media only screen and (max-width: 112.5em) { @content };    //1800px
+    }
+    @if $breakpoint == lrg {
+        @media only screen and (min-width: 112.51em) { @content };    //1800
+    }
+}
 
 
 * {
@@ -33,20 +33,20 @@ html {
     color: $color-dark;
     overflow: visible;
 
-//     @include respond(tp) { // width < 1200?
-//         font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
-//     }
+    @include respond(tp) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
     
-//     @include respond(dsk) { // width < 900?
-//         font-size: 50%; //1 rem = 8px, 8/16 = 50%
-//     }
-//     @include respond(ph) {
-//         font-size: 34%;
-//     }
-//     @include respond(lrg) {
-//         font-size: 75%; //1rem = 12, 12/16
-//     }
-// }
+    @include respond(dsk) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    @include respond(ph) {
+        font-size: 34%;
+    }
+    @include respond(lrg) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
 
 a {
     text-decoration: none;
@@ -86,4 +86,4 @@ a {
 // @include respond(big-desktop) {
 //     font-size: 75%; //1rem = 12, 12/16
 // }
-}
+// }
