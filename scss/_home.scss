@@ -14,7 +14,10 @@
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     border-radius: $border-pic--l;
-        overflow: hidden;
+    overflow: hidden;
+    @include respond(ph) {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
+    }
 
 
     &__box {
@@ -27,6 +30,11 @@
         animation-name: fromTop;
         animation-duration: 3s;
         font-weight: 900;
+        @include respond(ph) {
+            font-size: 5rem;
+            letter-spacing: 1rem;
+        }
+
     }
     &--h2 {
         width: 100%;
@@ -37,7 +45,10 @@
         animation-name: fadeIn;
         animation-duration: 3s;
         font-weight: 900;
-
+        @include respond(ph) {
+            font-size: 1.4rem;
+            letter-spacing: 0.4rem;
+        }
     }
     &--btn {
         @include btn;
@@ -92,6 +103,14 @@
         padding: 16rem 0rem;
         display: flex;
         justify-content: space-evenly;
+        @include respond(ph) {
+            flex-direction: column;
+            height: 160rem;
+            width: 200px;
+            padding: 0 4rem 4rem 4rem;
+            margin-top: -18rem;
+        }
+
         h1 {
             display: none;
         }
@@ -266,6 +285,14 @@
                 transition: transform .6s linear;
                 border-radius: $border-pic--s;
                 text-align: center;
+                @include respond(ph) {
+                    height: 40rem;
+                    width: 32rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
+
             }
 }
 }}

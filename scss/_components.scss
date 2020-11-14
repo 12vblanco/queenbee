@@ -11,6 +11,10 @@
         align-items: center;
         justify-content: space-between;
         padding-top: .5rem;
+
+        @include respond(ph) {
+            padding-top: .2rem;
+        }
     
         .logo {
             display: flex;
@@ -24,6 +28,12 @@
                     height: inherit;
                     transition: all .2s ease-in;
                     padding-top: 0.6rem;
+                    @include respond(ph) {
+                        width: 12rem;
+                        padding-top: 0;
+                    }
+                    
+
                 }
                 &__img--png:hover {
                     transform: rotate(10deg);
@@ -41,6 +51,10 @@
                     text-transform: none;
                     font-size: 4.4rem;
                     transition: all .2 ease-in;
+                    @include respond(ph) {
+                        font-size: 5.2rem;
+
+                    }
                     
                    }
                 &--h2 {
@@ -75,8 +89,8 @@
             .menu {
                     display: flex;
 
-                    @include respond(dsk) { // width < 900?
-                        display: none; //1 rem = 8px, 8/16 = 50%
+                    @include respond(tp) { 
+                        display: none; 
                     }
                     @include respond(ph) {
                         display: none;
@@ -145,8 +159,8 @@
     transition: all .5s ease-in;
     backface-visibility: hidden;
 
-    @include respond(dsk) { // width < 900?
-        display: unset; //1 rem = 8px, 8/16 = 50%
+    @include respond(tp) { 
+        display: unset; 
     }
     @include respond(ph) {
         display: unset;
@@ -276,9 +290,6 @@
     font-size: 3rem;
 }
 
-
-
-
 // Buttom Main
 @mixin btn {
         margin: 0 auto;
@@ -362,6 +373,10 @@
     border-radius: $border-pic--l;
     color: #fff;
     padding-top: 10rem;
+
+    @include respond(ph) {
+        clip-path: polygon(50% 6%, 100% 0%, 100% 100%, 0 100%, 0 0);
+    }
 }
 
 .footer {
@@ -445,6 +460,10 @@
         min-width: 30.8rem;
         padding: 3rem 1rem 1rem 1rem;
         font-weight: 700;
+        @include respond(ph) {
+            min-width: 40%;
+            padding: 1.6rem 0;
+        }
 
 
         li {
@@ -472,6 +491,10 @@
         padding: 3rem 1rem 1rem 1rem;
         font-weight: 700;
 
+        @include respond(ph) {
+            min-width: 40%;
+            padding: 1.6rem 0;
+        }
 
         li {
             list-style: none;
@@ -507,6 +530,12 @@
         text-align: left;
         padding: 3rem 1rem 1rem 1rem;
 
+        @include respond(ph) {
+            min-width: 100%;
+            padding: 1.6rem 0;
+            text-align: center;
+        }
+
         &--title {
             font-size: 2.8rem;
             margin-left: 1rem;
@@ -534,6 +563,12 @@
             font-weight: 700;
             font-size: 1.6rem;
             text-align: left;
+            @include respond(ph) {
+                text-align: center;;
+                padding: 1.6rem 0;
+                margin: 0 auto;
+            }
+
         }    
 
         .input__submit {
