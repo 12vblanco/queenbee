@@ -322,6 +322,16 @@
     position: relative;
     box-shadow: $shadow;
     border-radius: $border-pic--s;
+    @include respond(ph) {
+        width: 100%;
+        max-width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        margin: 0;
+    }
+
     &__box {
         
         display: flex;
@@ -334,15 +344,13 @@
         transform: translate(-50%, -50%);
         align-items: center;
         justify-content: center;
-
         @include respond(ph) {
-            width: 100%;
+            
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-            padding: 1rem;
-            margin: 0;
         }
+        
     }
     &__img {
         width: 100%;
@@ -353,8 +361,9 @@
         margin: 0 auto;
         min-width: 28rem;
         @include respond(ph) {
-            width: 60%;
-            max-width: 150px;
+            width: 80%;
+            max-width: 200px;
+            padding: 2rem;
         }
         }
 
