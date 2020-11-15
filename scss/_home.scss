@@ -146,14 +146,26 @@
                         top: 2rem;
                         font-weight: 900;
                         padding: 1rem 2rem 5rem 2rem;
+                        @include respond(tp) {
+                            font-size: 2.1rem;
+                            top: 1.8rem;
+                            padding: 1rem 2rem 2rem 2rem;
+                        }
+                        @include respond(ph) {
+                            font-size: 3rem;
+                            padding: 1rem 2rem 5rem 2rem;
+
+                        }
                     }
                     p {
                         color: #fff;
                         font-size: 1.4rem;
                         letter-spacing: 0.1rem;
-                        
                         font-weight: 500;
                         padding: 0rem 1rem 1rem 1rem;
+                        @include respond(ph) {
+                            font-size: 2rem;
+                        }
                     }
                 }
                 &--front2 {
@@ -178,6 +190,16 @@
                         top: 2rem;
                         font-weight: 900;
                         padding: 1rem 2rem 5rem 2rem;
+                        @include respond(tp) {
+                            font-size: 2.1rem;
+                            top: 1.8rem;
+                            padding: 1rem 2rem 3rem 2rem;
+                        }
+                        @include respond(ph) {
+                            font-size: 3rem;
+                            padding: 1rem 2rem 5rem 2rem;
+
+                        }
                     }
                     p {
                         color: #fff;
@@ -186,6 +208,9 @@
                         
                         font-weight: 500;
                         padding: 0rem 1rem 1rem 1rem;
+                        @include respond(ph) {
+                            font-size: 2rem;
+                        }
                     }
                 }
                 &--front3 {
@@ -210,6 +235,16 @@
                         top: 2rem;
                         font-weight: 900;
                         padding: 0rem 2rem 4rem 2rem;
+                        @include respond(tp) {
+                            font-size: 2.1rem;
+                            top: 1.8rem;
+                            padding: 1rem 2rem 3rem 2rem;
+                        }
+                        @include respond(ph) {
+                            font-size: 3rem;
+                            padding: 1rem 2rem 5rem 2rem;
+
+                        }
                     }
                     p {
                         color: #fff;
@@ -217,6 +252,9 @@
                         letter-spacing: 0.1rem;
                         font-weight: 500;
                         padding: 0rem 1.4rem 1rem 1.4rem;
+                        @include respond(ph) {
+                            font-size: 2rem;
+                        }
                     }
                 }
             }
@@ -244,6 +282,12 @@
                     top:  2rem;
                     font-weight: 500;
                     padding-bottom: 1rem;
+                    
+                    @include respond(ph) {
+                        font-size: 2.2rem;
+                        letter-spacing: 0.1rem;
+                        margin-top: 2rem;
+                    }
             }
         }
         }
@@ -260,6 +304,9 @@
                     bottom: 3rem;
                     left: 7rem;
                     font-weight: 700;
+                    @include respond(tp) {
+                        left: 6rem;
+                    }
                     @include respond(ph) {
                         left: 11rem;
                     }
@@ -278,6 +325,10 @@
                 position: absolute;
                     bottom: 3rem;
                     left: 6.1rem;
+
+                    @include respond(tp) {
+                        left: 5.2rem;
+                    }
                     @include respond(ph) {
                         left: 10.11rem;
                     }
@@ -292,6 +343,11 @@
                 transition: transform .6s linear;
                 border-radius: $border-pic--s;
                 text-align: center;
+                
+                @include respond(tp) {
+                    height: 28rem;
+                    width: 22rem;
+                }
                 @include respond(ph) {
                     height: 40rem;
                     width: 32rem;
@@ -322,6 +378,9 @@
     position: relative;
     box-shadow: $shadow;
     border-radius: $border-pic--s;
+    @include respond(tp) {
+        height: 68vh;
+    }
     @include respond(ph) {
         width: 100%;
         max-width: 100%;
@@ -331,6 +390,8 @@
         justify-content: center;
         padding: 1rem;
         margin: 0;
+
+        
     }
 
     &__box {
@@ -361,6 +422,9 @@
         width: 70%;
         margin: 0 auto;
         min-width: 28rem;
+        @include respond(tp) {
+            padding: 1.4rem;
+        }
         @include respond(ph) {
             width: 80%;
             max-width: 200px;
@@ -372,13 +436,17 @@
         display: inline-block;
         color: #fff;
         font-size: 1.6rem;
-        font-weight: 400;
+        font-weight: 500;
         width: 100%;
         padding: 1rem 3.8rem 0 0;
         text-align: center;
+        @include respond(tp) {
+            padding: 1rem 1.8rem 0 0;
+        }
         @include respond(ph) {
             padding: 0;
-            max-width: 250px;
+            max-width: 350px;
+            font-size: 2rem;
         }
     }
         .coursepreview__text--btn {
@@ -410,7 +478,11 @@
     width: 100%;
     max-width: 110rem;
     margin: 0 auto;
-    @include respond(ph) {
+    @include respond(tp) {
+        justify-content: center;
+        flex-direction: column;
+    }
+    @include respond(tp) {
         justify-content: center;
         flex-direction: column;
     }
@@ -418,7 +490,6 @@
     .banners__banners {
         width: 100%;
         height: auto;
-        padding: 0 2rem;
         padding-top: 2rem;
               
         .banner1, .banner2, .banner3 {
@@ -430,9 +501,13 @@
                 width: 100%;
                 max-width: 400px;
                 margin: 0 auto;
-                padding: 1.4rem;
                 margin-bottom: 2rem;
-
+            }
+            @include respond(tp) {
+                width: 100%;
+                max-width: 100%;
+                margin: 0 auto;
+                margin-bottom: 2rem;
             }
         }
              img {
@@ -450,6 +525,10 @@
     }
 .fed {
     box-shadow: $shadow;
+    text-align: center;
+    max-width: 300px;
+    position: relative;
+    margin: 0 auto;
 }
 .twitter-timeline {
     height: 62rem !important;

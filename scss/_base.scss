@@ -33,11 +33,11 @@ html {
     color: $color-dark;
     overflow: visible;
 
-    @include respond(tp) { // width < 1200?
+    @include respond(dsk) { // width < 1200?
         font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
     }
     
-    @include respond(dsk) { // width < 900?
+    @include respond(tp) { // width < 900?
         font-size: 50%; //1 rem = 8px, 8/16 = 50%
     }
     @include respond(ph) {

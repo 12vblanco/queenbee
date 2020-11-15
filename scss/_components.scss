@@ -36,7 +36,7 @@
 
                 }
                 &__img--png:hover {
-                    transform: rotate(10deg);
+                    transform: rotate(6deg);
                 }
     
             &__text {
@@ -204,7 +204,7 @@
         ::after, ::before {
             content: "";
             position: absolute;
-            height: .7rem;
+            height: .6rem;
             width: 6rem;
             background-color: $color-dark;
             border-radius: .8rem;
@@ -261,10 +261,15 @@
 
             & li {
             color: $color-dark;
-            font-size: 2.2rem;
-            margin-top: 2.2rem;
+            font-size: 2.4rem;
+            margin-top: 2.6rem;
             font-weight: 900;
             text-transform: uppercase;
+            @include respond(ph) {
+                font-size: 3.4rem;
+                margin-top: 3.6rem;
+
+            }
 
             & a {
                 color: inherit;
@@ -419,6 +424,11 @@
         .logo__img--png {
             width: 12rem;
             position: relative;
+            transition: all .2s ease-in;
+
+            &:hover {
+                transform: rotate(6deg);
+            }
         }
         .logo__text {
 
@@ -496,6 +506,9 @@
             min-width: 40%;
             padding: 1.6rem 0;
         }
+        @include respond(tp) {
+            padding: 1.6rem 0 1.6rem 6rem;
+        }
 
         li {
             list-style: none;
@@ -528,7 +541,7 @@
 
     &__newsletter {
         min-width: 35.6rem;
-        text-align: left;
+        text-align: center;
         padding: 3rem 1rem 1rem 1rem;
 
         @include respond(ph) {
@@ -538,7 +551,7 @@
         }
 
         &--title {
-            font-size: 2.8rem;
+            font-size: 3.2rem;
             margin-left: 1rem;
             letter-spacing: 0.1rem;
         }
@@ -551,19 +564,19 @@
         }
 
         .input__email {
-            display: block;
             width: 26.8rem;
             height: 4rem;
             padding: 1rem;
             margin: 1rem;
             outline: none;
             border: none;
+            border: 1px solid #999;
             border-bottom: 2px solid $color-primary;
             background-color: $color-white;
             color: $color-dark;
-            font-weight: 700;
-            font-size: 1.6rem;
-            text-align: left;
+            font-weight: 500;
+            font-size: 1.4rem;
+            text-align: center;
             @include respond(ph) {
                 text-align: center;;
                 padding: 1.6rem 0;
@@ -581,9 +594,8 @@
             background-color: $color-secondary-dark;
             color: #fff;
             font-family: $font-primary;
-            font-weight: 700;
+            font-weight: 300;
             outline: none;
-            text-align: center;
         }
         }
     }
@@ -594,4 +606,13 @@
     letter-spacing: 0.6rem;
     color: $color-dark;
     padding: 1.2rem 0;
+    transition: linear .3s;
+
+    a:link, a:visited {
+        transition: linear .3s;
+        }
+        
+        a:hover {
+            color: $color-primary;
+        }
 }
