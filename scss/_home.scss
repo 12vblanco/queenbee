@@ -444,7 +444,7 @@
             padding: 1rem 1.8rem 0 0;
         }
         @include respond(ph) {
-            padding: 0;
+            padding: 1rem;
             max-width: 350px;
             font-size: 2rem;
         }
