@@ -1,12 +1,14 @@
 // Navbar
 .navbar {
     width: 100%;
-    height: 14rem;
+    height: 11rem;
     overflow: hidden;
+    
 
     &__container {
         display: flex;
         max-width: 124rem;
+        height: 12rem;
         margin: 0 auto;
         align-items: center;
         justify-content: space-between;
@@ -21,10 +23,10 @@
             padding-bottom: 1rem;
             z-index: 5;
             &__img {
-                margin: 1rem 0.4rem 0 0;
+                margin: 0rem 0.4rem 0 0;
                 }
             &__img--png {
-                    width: 10rem;
+                    width: 9rem;
                     height: inherit;
                     transition: all .2s ease-in;
                     padding-top: 0.6rem;
@@ -44,7 +46,7 @@
                 flex-direction: column;
                 text-align: center;
                 position: relative;
-                top: 0.7rem;
+                top: -1rem;
     
                 &--h1 {
                     font-family: $font-secondary;
@@ -59,7 +61,7 @@
                    }
                 &--h2 {
                     font-size: 1.4rem;
-                    margin-top: -0.2rem;
+                    margin-top: -0.3rem;
                     padding-left: 1.1rem;
                     letter-spacing: .4rem;
                     font-weight: 900;
@@ -73,15 +75,11 @@
                     a:link, a:visited {
                         color: $color-primary;
                         transition: all .2s ease-in-out;
-                        backface-visibility: hidden;
                     }
                     a:hover {
-                        font-size: 1.55rem;
                         color: (lighten($color-primary, $amount: 20%));
                     }
-                    a:active {
-                        font-size: 1.45rem;
-                    }
+                    
                    }
                 } 
             }
@@ -98,6 +96,7 @@
                     // display: none;
                 &__items {
                     list-style: none;
+
                     .active {
                         color: $color-primary;
                         
@@ -105,14 +104,15 @@
     
                     &-item {
                         display: inline-block;
-                        font-size: 1.7rem;
+                        font-size: 1.6rem;
                         font-weight: 900;
                         font-family: 'Lato' sans-serif;
                         margin-right: 2rem;
                         color: $color-dark;
                         text-transform: uppercase;
                         position: relative;
-                        top: -.8rem;
+                        top: -1rem;
+                        
                         .fab {
                             font-size: 2.6rem;
                             position: relative;
@@ -494,12 +494,12 @@
             list-style: none;
         }
         &--opening {
-            font-size: 2.2rem;
+            font-size: 2rem;
             color: $color-white;
             border-bottom: 1px solid rgba($color-white, .4);
         }
         &--days {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-top: 1rem;
         }
         
@@ -527,12 +527,12 @@
             list-style: none;
         }
         &--title {
-            font-size: 2.2rem;
+            font-size: 2rem;
             color: $color-white;
             border-bottom: 1px solid rgba($color-white, .4);
         }
         &--link {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-top: 1rem;
             a:link, a:visited {
                 transition: linear .3s;

@@ -1,4 +1,4 @@
-.cafemain {
+.cafesection {
     width: 100%;
     height: 60vh;
     min-height: 52.2rem;
@@ -7,13 +7,13 @@
     // color: $color-white;
     // background-image: linear-gradient(
     //     to right top,
-    //     rgba($color-secondary, .8),
-    //     rgba($color-secondary-dark, .8));
+    //     rgba($color-secondary, .6),
+    //     rgba($color-secondary-dark, .6)),
         // url(../images/cafe__main-bg-x2.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+    // clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     border-radius: $border-pic--l;
     overflow: hidden;
     @include respond(tp) {
@@ -74,7 +74,7 @@
                 font-size: 2rem;
             }
     }
-    .cafemain__text--btn {
+    .cafesection__text--btn {
         @include btn__solo;
     }
 }

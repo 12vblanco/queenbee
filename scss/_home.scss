@@ -6,8 +6,8 @@
     color: $color-white; 
     background-image: linear-gradient(
         to right top,
-        rgba($color-secondary, .8),
-        rgba($color-secondary-dark, .8)),
+        rgba($color-secondary, .6),
+        rgba($color-secondary-dark, .6)),
         url(../images/home__main-bg-x1.jpg);
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@
     }
     &--btn {
         @include btn;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         width: 20rem;
         padding: 1.6rem 1.8rem;
 
@@ -459,8 +459,8 @@
         .coursepreview__text--btn {
             font-weight: 900;
             width: 14rem;
-            padding: 1.2rem 1.6rem;
-            font-size: 1.6rem;
+            padding: 1rem 1.2rem;
+            font-size: 1.5rem;
 
             @include btn__solo;
             margin-top: 3rem;
