@@ -395,23 +395,30 @@
     }
 
     &__box {
-        
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        height: auto;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        align-items: center;
-        justify-content: center;
+        @include main__container;
         @include respond(ph) {
             
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
+
+        // display: flex;
+        // justify-content: space-between;
+        // width: 100%;
+        // height: auto;
+        // position: absolute;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        // align-items: center;
+        // justify-content: center;
+        // @include respond(ph) {
+            
+        //     flex-direction: row;
+        //     flex-wrap: wrap;
+        //     justify-content: center;
+        // }
         
     }
     &__img {

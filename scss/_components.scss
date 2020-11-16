@@ -355,6 +355,19 @@
         transform: translate(-50%, -50%);
 }
 
+@mixin main__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        align-items: center;
+        justify-content: center;
+}
+
 // Footer
 .footer__container {
     display: flex;
