@@ -4,7 +4,9 @@
     height: 12rem;
     overflow: hidden;
     padding: 1rem;
-    
+    @include respond(ph) {
+        height: 13rem;
+    }
 
     &__container {
         display: flex;
