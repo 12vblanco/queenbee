@@ -96,6 +96,7 @@
     width: 100%;
     & h1 {
         @include main__heading;
+        margin: 0;
     }
 
     &__container {
@@ -108,9 +109,9 @@
         justify-content: space-evenly;
         @include respond(ph) {
             flex-direction: column;
-            height: 160rem;
+            height: 150rem;
             width: 174.08px;
-            padding: 0 0rem 4rem 0rem;
+            padding: 0;
         }
 
         
