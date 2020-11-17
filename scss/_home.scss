@@ -97,7 +97,7 @@
     & h1 {
         @include main__heading;
         @include respond(ph) {
-            margin-bottom: -3rem;
+            margin-bottom: -6rem;
             margin-top: 0;
         }
     }
