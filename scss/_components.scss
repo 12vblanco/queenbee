@@ -234,6 +234,7 @@
     align-items: center;
     justify-content: center;
     z-index: 4;
+    
 }
 
 
@@ -285,11 +286,14 @@
             & a:hover {
                     color: $color-primary;
                 }
+            
+
         }
     }
     }
 }
 }
+
 .social {
     display: inline-block;
     padding: 0 1.6rem;
