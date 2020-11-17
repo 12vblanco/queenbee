@@ -9,6 +9,7 @@
     overflow: hidden;
     padding: 2rem 0;
     border-radius: $border-pic--s;
+    
 
     @include respond(tp) {
     }
@@ -86,6 +87,7 @@
     }
 }
 .cafesection1 {
+    min-height: 80vh;
     display: flex;
     flex-direction: row;
     background-image: linear-gradient(
@@ -93,6 +95,8 @@
         rgba($color-secondary, .9),
         rgba($color-secondary-dark, 1));
     color: $color-white;
+    clip-path: polygon(0 0, 50% 15%, 100% 0%, 100% 100%, 50% 100%, 0 100%);
+
     @include respond(ph) {
     }
 }
