@@ -96,7 +96,10 @@
     width: 100%;
     & h1 {
         @include main__heading;
-        margin-bottom: -2rem;
+        @include respond(ph) {
+            margin-bottom: -3rem;
+            margin-top: 0;
+        }
     }
 
     &__container {
