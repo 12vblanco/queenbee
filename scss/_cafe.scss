@@ -1,25 +1,19 @@
-.cafesection {
+
+.cafesection1, .cafesection2 {
     width: 100%;
-    height: 100%;
-    min-height: 90vh;
+    min-height: 60vh;
     margin: 0 auto;
-    // background-color: $color-secondary-dark;
-    // color: $color-white;
-    // background-image: linear-gradient(
-    //     to right top,
-    //     rgba($color-secondary, .6),
-    //     rgba($color-secondary-dark, .6)),
-        // url(../images/cafe__main-bg-x2.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-    // clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
-    border-radius: $border-pic--l;
     overflow: hidden;
     padding: 2rem 0;
+    border-radius: $border-pic--s;
+
     @include respond(tp) {
     }
     @include respond(ph) {
+        min-height: 66vh;
     }
     &__box {
         @include main__container;
@@ -27,51 +21,93 @@
         @include respond(tp) {
             text-align: center;
         }
-        
+        @include respond(ph) {
+            flex-direction: column;
+        }
     }    
     &__img {
         max-width: 100%;
+        @include respond(ph) {
+            max-width: 320px;
+        }
         img {
-            display: inline-block;
-            min-width: 340px;
-            max-width: 540px;
+            display: flex;
+            min-width: 200px;
+            max-width: 420px;
             width: 100%;
             height: 100%;
             margin: 0 auto;
-            min-width: 28rem;
-            margin-right: 3rem;
+            margin: 3rem 3rem;
             box-shadow: $shadow;
+            border-radius: $border-pic--l;
+
             @include respond(tp) {
-                margin: 0;
                 position: relative;
-                top: -2rem;
             }
             @include respond(ph) {
+                max-width: 90%;
+                margin: 0 auto;
+                margin-top: 8rem;
+                
             }
             } 
     }
     &__text {
-            display: inline-block;
-            color: $color-secondary-dark;
+            display: flex;
+            flex-direction: column;
             font-size: 1.6rem;
             font-weight: 700;
             max-width: 45rem;
-            padding: 1rem 3.8rem 0 0;
-            text-align: left;
-            margin-left: 3rem;
+            text-align: justify;
+            padding: 0 3rem;
+            margin: 0 3rem;
             @include respond(tp) {
-                margin: 0;
                 position: relative;
                 top: -2rem;
-                padding: 0;
+                padding: 2rem;
             }
             @include respond(ph) {
-                padding: 1rem;
-                max-width: 350px;
-                font-size: 2rem;
+               
             }
     }
-    .cafesection__text--btn {
-        @include btn__solo;
+    
+    .cafesection1__text--btn, .cafesection2__text--btn {
+            @include btn__solo;
+            text-align: center;
+            font-weight: 900;
+            width: 14rem;
+            padding: 1rem 1.2rem;
+            font-size: 1.5rem;
+            margin-top: 3rem;
     }
+    .cafesection2__text--btn {
+        background-color: $color-secondary-dark;
+        color: $color-white;
+    }
+}
+.cafesection1 {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-secondary, .9),
+        rgba($color-secondary-dark, 1));
+    color: $color-white;
+    @include respond(ph) {
+    }
+}
+.cafesection2 {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-white;
+    color: $color-secondary-dark;
+
+    &__box {
+        @include respond(ph) {
+            flex-direction: column-reverse;
+        }
+    }
+}
+.cafe__sectionend {
+    height: 18vw;
 }
