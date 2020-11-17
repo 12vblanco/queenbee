@@ -24,7 +24,7 @@
         display: flex;
         vertical-align: middle;
         justify-content: center;
-        margin-top: -5rem;
+        margin-top: -4rem;
         &--text {
             padding: 2rem;
             &-header {
@@ -36,31 +36,34 @@
             font-size: 2rem;
             letter-spacing: 2.1rem;
             position: relative;
-            top: -2rem;
+            top: -2.2rem;
+            font-weight: 900;
         }
         &-address {
             font-size: 1.3rem;
             letter-spacing: 0.6rem;
             position: relative;
             top: -2rem;
+            margin-bottom: .2rem;
         }
         &-tel {
             font-size: 2rem;
             color: $color-primary;
             position: relative;
             top: -1.2rem;
+            margin-bottom: 1rem;
         }
         }
 }
 .contact__form {
     width: 100%;
-    
 }
 
 .form {
     &__heading {
-        font-size: 1.8rem;
-        letter-spacing: 0.2rem;
+        font-size: 1.4rem;
+        letter-spacing: 0.35rem;
+        font-weight: 500;
     }
     input, textarea {
         width: 300px;
@@ -71,14 +74,26 @@
         margin: 0.2rem;
         font-family: $font-primary;
         padding: 0.4rem;
-        color: $color-white;
+        transition: all .2s ease-in;
+        &:hover {
+            background: rgba($color: $color-secondary-dark, $alpha: .7);
+        }
     }
     textarea {
         height: 10rem;
     }
-    input .form__submit {
-        max-width: 4rem;
-        border-radius: 8px;
+    .form__submit {
+        @include btn__solo;
+        width: 18%;
+        height: auto;
+        margin: 1rem;
+        padding: 1.2rem 1.6rem;
+        border-radius: 22rem;
+        background-color: rgba($color: $color-secondary-dark, $alpha: .7);
+        color: $color-white;
+        font-family: $font-primary;
+        font-size: 1.4rem;
+        font-weight: 700;
     }
 }
 }
