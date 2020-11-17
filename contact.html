@@ -32,7 +32,7 @@
     <script src="https://kit.fontawesome.com/edbd8d14d4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="images/icon.png">
-    <title>Queen Bee | Cafe </title>
+    <title>Queen Bee | Contact </title>
 </head>
 <body>
     <nav class="navbar">
@@ -50,8 +50,8 @@
             <div class="menu">
                 <ul class="menu__items">
                     <li class="menu__items-item"><a href="index.html">Home</a></li>
-                    <li class="menu__items-item active"><a href="cafe.html">Cafe</a></li>
-                    <li class="menu__items-item"><a href="contact.html">Contact</a></li>
+                    <li class="menu__items-item"><a href="cafe.html">Cafe</a></li>
+                    <li class="menu__items-item active"><a href="contact.html">Contact</a></li>
                     <li class="menu__items-item"><a href="shop.html">Shop</a></li>
                     <li class="menu__items-item"><a href="course.html">Courses</a></li>
                     <li class="menu__items-item"><a href="www.instagram.com"><i class="fab fa-instagram"></i></a></li>
@@ -66,9 +66,9 @@
                 <div class="menu__container">
                     <div class="menu__container--wrap">
                 <ul>
-                    <li class="menu__items-item active"><a href="index.html">Home</a></li>
+                    <li class="menu__items-item"><a href="index.html">Home</a></li>
                     <li class="menu__items-item"><a href="cafe.html">Cafe</a></li>
-                    <li class="menu__items-item"><a href="contact.html">Contact</a></li>
+                    <li class="menu__items-item  active"><a href="contact.html">Contact</a></li>
                     <li class="menu__items-item"><a href="shop.html">Shop</a></li>
                     <li class="menu__items-item"><a href="course.html">Courses</a></li>
                     <li class="menu__items-item social"><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -80,46 +80,42 @@
         </div>
     </nav>
 
-    <section class="cafesection2">
-        <div class="cafesection2__box">
-            <div class="cafesection2__img">
-                <img src="images/cafe__header-x2.jpg" alt="Queen Bee's Menu">
-            </div>
-            <div class="cafesection2__text">
-                 <h2 class="cafesection2__text--title">Our Cafe</h2>
-                 <p class="cafesection2__text--text">We source our food responsibly, supporting small local food producers and suppliers. Organic, local and sustainable produce will feature across the menu, changing slightly depending on season and what our local farms and suppliers have available.<br> We use <span><a href="https://www.deargreencoffee.com/" target="_blank">Dear Green Coffee</a></span> which is a ethical company, environmentally aware & an ethical employer.<br> We also use <span><a href="https://www.deargreencoffee.com/" target="_blank">One water</a></span> products, helping to provide life’s essentials to communities across Africa.</p>
-                 <div class="cafesection2__text--btn"><a href="docs/menu.pdf" target="_blank">Full Menu</a></div>
-            </div>
-        </div>
-    </section>
-    <section class="cafesection1">
-        <div class="cafesection1__box">
-                <div class="cafesection1__text">
-                    <h2 class="cafesection1__text--title">Sandwiches & Toasts</h2>
-                    <p class="cafesection1__text--text">All our sandwiches are freshly made by us everyday using only the highest quality organic products. We source our food responsibly, supporting small local food producers and suppliers. Organic, local and sustainable produce will feature across the menu, changing slightly depending on season and what our local farms and suppliers have available. Veggie options always though our menu.</p>
-                    <div class="cafesection1__text--btn"><a href="docs/menu.pdf" target="_blank">Full Menu</a></div>
-
-                </div>
-                <div class="cafesection1__img">
-                    <img src="images/cafe__sandwiches-x2.jpg" alt="Queen Bee's Menu">
-                </div>
+    <section class="contact">
+        <div class="contact__box">
             
-        </div>
-    </section>
-    <section class="cafesection2">
-        <div class="cafesection2__box">
-            <div class="cafesection2__img">
-                <img src="images/cafe__smoked-x2.jpg" alt="Queen Bee's Menu">
-            </div>
-            <div class="cafesection2__text">
-                 <h2 class="cafesection2__text--title">Smoked Fish, Cheese & Charcuterie</h2>
-                 <p class="cafesection2__text--text">You can taste the finest Scottish smoked fish such as Tobermory trout or order a platter of locally sourced dry meats and charcuterie. Or if you fancy our selection of cheeses always served with our organic sourdough, pickled egg, farmhouse oatcakes and the local bakery’s sourdough.</p>
-                 <div class="cafesection2__text--btn"><a href="docs/menu.pdf" target="_blank">Full Menu</a></div>
-            </div>
-        </div>
-        
-    </section>
+            <div class="contact__box--text">
+                 <p class="contact__box--text-header">Queen Bee Cafe</p>
+                 <p class="contact__box--text-subheader">Honey Artisans</p>
+                 <p class="contact__box--text-address">High Street</p>
+                 <p class="contact__box--text-address">Melrose</p>
+                 <p class="contact__box--text-address">Scottish Borders</p>
+                 <div class="contact__box--text-tel"><a href="tel:#">01585 45 45 45</a></div>
 
+                 <div class="contact__form">
+                    <form class="form" name="contact" method="POST" data-netlify="true">
+                        <p class="form__heading">Please send us a message:</p>
+                        <p>
+                          <label class="form__name"><input type="text" name="name" placeholder="Your Name" required></label>   
+                        </p>
+                        <p>
+                          <label class="form__email"><input type="email" name="email" placeholder="Your Email Address" required></label>   
+                        </p>
+                       
+                        <p>
+                          <label class="form__area"><textarea name="message" rows="10" cols="40" placeholder="Your Message" required></textarea></label>
+                        </p>
+                                 
+                        <p>
+                          <input class="form__submit" type="submit" value="Send">
+                        </p>
+                  </form>
+                </div>                 
+            </div>
+        </div>
+    </section>
+    <div class="contact__box--map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9017.173313584977!2d-2.731669444176379!3d55.59690846164849!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887784e8beca215%3A0x8b4cd1d6acd6f369!2sMelrose!5e0!3m2!1sen!2suk!4v1605620363965!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
         <div class="cafe__heading">If you plan to visit with a group, we can book a table for you!!</div>
 
     

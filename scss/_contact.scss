@@ -1,0 +1,84 @@
+.contact {
+    height: 90vh;
+    background-color: $color-secondary-dark;
+    color: $color-white; 
+    background-image: linear-gradient(
+        to right top,
+        rgba($color-secondary, .6),
+        rgba($color-secondary-dark, .6)),
+        url(../images/contact__main--bg-x2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+    border-radius: $border-pic--l;
+    overflow: hidden;
+    display: flex;
+    vertical-align: middle;
+    @include respond(ph) {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
+    }
+
+    &__box {
+        @include box;   
+        display: flex;
+        vertical-align: middle;
+        justify-content: center;
+        margin-top: -5rem;
+        &--text {
+            padding: 2rem;
+            &-header {
+            font-size: 7rem;
+            text-align: center;
+            letter-spacing: 1.1rem;
+            }
+        &-subheader {
+            font-size: 2rem;
+            letter-spacing: 2.1rem;
+            position: relative;
+            top: -2rem;
+        }
+        &-address {
+            font-size: 1.3rem;
+            letter-spacing: 0.6rem;
+            position: relative;
+            top: -2rem;
+        }
+        &-tel {
+            font-size: 2rem;
+            color: $color-primary;
+            position: relative;
+            top: -1.2rem;
+        }
+        }
+}
+.contact__form {
+    width: 100%;
+    
+}
+
+.form {
+    &__heading {
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
+    }
+    input, textarea {
+        width: 300px;
+        height: 2.8rem;
+        outline: none;
+        border: none;
+        background: rgba($color: $color-secondary-dark, $alpha: .6);
+        margin: 0.2rem;
+        font-family: $font-primary;
+        padding: 0.4rem;
+        color: $color-white;
+    }
+    textarea {
+        height: 10rem;
+    }
+    input .form__submit {
+        max-width: 4rem;
+        border-radius: 8px;
+    }
+}
+}

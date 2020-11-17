@@ -5,7 +5,12 @@
     position: relative;
     overflow: hidden;
     border-radius: $border-pic--s;
-    
+    & img {
+    transition: all .3s ease-in;
+    }
+    & img:hover {
+        transform: scale(1.1);
+    }
 
     @include respond(tp) {
     }
@@ -130,9 +135,13 @@
         }
     }
 }
-.cafe__sectionend {
-    height: 18vw;
+
+.cafe__heading{
+    @include main__heading;
+    margin-top: 0;
 }
+
+
 
 .footer {
     margin-top: 4rem;
