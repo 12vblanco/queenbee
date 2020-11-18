@@ -11,12 +11,14 @@
     background-position: center;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     border-radius: $border-pic--l;
     overflow: hidden;
     display: flex;
     vertical-align: middle;
     @include respond(ph) {
         clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
         height: 74vh;
     }
 

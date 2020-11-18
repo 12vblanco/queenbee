@@ -13,9 +13,11 @@
     background-position: center;
     position: relative;
     clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     border-radius: $border-pic--l;
     overflow: hidden;
     @include respond(ph) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
         clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
     }
 
