@@ -1,3 +1,1022 @@
 .shop {
     height: 80vh;
 }
+
+.gallery {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    .cafe__heading {
+        margin: 0 auto;
+
+    }
+    
+    &__container {
+        width: 100%;
+        height: auto;
+        max-width: 110rem;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4rem;
+
+        &--items {
+            display: inline-block;
+            min-height: 64rem;
+        }
+        &--item1, &--item2, &--item3, &--item4, &--item5, &--item6 {
+            display: inline-block;
+            height: 600px;
+            width: 600px;
+            max-width: 28rem;
+            max-height: 28rem;
+            overflow: hidden;
+            -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+            clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+            padding: 3px;
+        }
+        &--item1 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .3),
+            rgba($color-secondary-dark, .3)),
+            url(../images/shop__item1.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: all .5s;
+            p {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 5rem;
+                padding: 2rem;
+                transition: all .5s;
+            }
+            .btn1 {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 4rem;
+                padding: 1rem 1.4rem;
+                width: 40%;
+                transition: all .5s;
+                @include btn__solo;
+            }
+            
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item1.jpg);
+                background-size: cover;
+                background-position: center;
+                p {
+                    opacity: 1;
+                }
+                .btn1 {
+                    opacity: 1;
+                }
+            }
+            }
+
+
+        &--item2 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item3 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item4 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item5 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item6 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item1 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .3),
+            rgba($color-secondary-dark, .3)),
+            url(../images/shop__item1.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: all .5s;
+            p {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 5rem;
+                padding: 2rem;
+                transition: all .5s;
+            }
+            .btn1 {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 4rem;
+                padding: 1rem 1.4rem;
+                width: 40%;
+                transition: all .5s;
+                @include btn__solo;
+            }
+            
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item1.jpg);
+                background-size: cover;
+                background-position: center;
+                p {
+                    opacity: 1;
+                }
+                .btn1 {
+                    opacity: 1;
+                }
+            }
+            }
+
+
+        &--item2 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item3 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item4 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item5 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item6 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item1 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .3),
+            rgba($color-secondary-dark, .3)),
+            url(../images/shop__item1.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: all .5s;
+            p {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 5rem;
+                padding: 2rem;
+                transition: all .5s;
+            }
+            .btn1 {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 4rem;
+                padding: 1rem 1.4rem;
+                width: 40%;
+                transition: all .5s;
+                @include btn__solo;
+            }
+            
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item1.jpg);
+                background-size: cover;
+                background-position: center;
+                p {
+                    opacity: 1;
+                }
+                .btn1 {
+                    opacity: 1;
+                }
+            }
+            }
+
+
+        &--item2 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item3 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item4 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item5 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item6 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item1 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .3),
+            rgba($color-secondary-dark, .3)),
+            url(../images/shop__item1.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: all .5s;
+            p {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 5rem;
+                padding: 2rem;
+                transition: all .5s;
+            }
+            .btn1 {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 4rem;
+                padding: 1rem 1.4rem;
+                width: 40%;
+                transition: all .5s;
+                @include btn__solo;
+            }
+            
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item1.jpg);
+                background-size: cover;
+                background-position: center;
+                p {
+                    opacity: 1;
+                }
+                .btn1 {
+                    opacity: 1;
+                }
+            }
+            }
+
+
+        &--item2 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item3 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item4 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item5 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item6 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item1 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .3),
+            rgba($color-secondary-dark, .3)),
+            url(../images/shop__item1.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: all .5s;
+            p {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 5rem;
+                padding: 2rem;
+                transition: all .5s;
+            }
+            .btn1 {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 4rem;
+                padding: 1rem 1.4rem;
+                width: 40%;
+                transition: all .5s;
+                @include btn__solo;
+            }
+            
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item1.jpg);
+                background-size: cover;
+                background-position: center;
+                p {
+                    opacity: 1;
+                }
+                .btn1 {
+                    opacity: 1;
+                }
+            }
+            }
+
+
+        &--item2 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item3 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item4 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item5 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item6 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item1 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .3),
+            rgba($color-secondary-dark, .3)),
+            url(../images/shop__item1.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: all .5s;
+            p {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 5rem;
+                padding: 2rem;
+                transition: all .5s;
+            }
+            .btn1 {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 4rem;
+                padding: 1rem 1.4rem;
+                width: 40%;
+                transition: all .5s;
+                @include btn__solo;
+            }
+            
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item1.jpg);
+                background-size: cover;
+                background-position: center;
+                p {
+                    opacity: 1;
+                }
+                .btn1 {
+                    opacity: 1;
+                }
+            }
+            }
+
+
+        &--item2 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item2.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item3 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item3.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item4 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item4.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item5 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item5.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item6 {
+            position: relative;
+            top: 0rem;
+            left: 14rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .5),
+            rgba($color-secondary-dark, .5)),
+            url(../images/shop__item6.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        &--item1 {
+            position: relative;
+            top: 5rem;
+            background-image: linear-gradient(
+            to right,
+            rgba($color-secondary, .3),
+            rgba($color-secondary-dark, .3)),
+            url(../images/shop__item1.jpg);
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            transition: all .5s;
+            p {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 5rem;
+                padding: 2rem;
+                transition: all .5s;
+            }
+            .btn1 {
+                opacity: 0;
+                font-size: 1.4rem;
+                color: $color-white;
+                text-align: center;
+                position: relative;
+                top: 4rem;
+                padding: 1rem 1.4rem;
+                width: 40%;
+                transition: all .5s;
+                @include btn__solo;
+            }
+            &:hover {
+                transform: scale(1.1);
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item1.jpg);
+                background-size: cover;
+                background-position: center;
+                p {
+                    opacity: 1;
+                }
+                .btn1 {
+                    opacity: 1;
+                }
+            }
+            }
+
+
+            &--item2 {
+                position: relative;
+                top: 5rem;
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .3),
+                rgba($color-secondary-dark, .3)),
+                url(../images/shop__item2.jpg);
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+                transition: all .5s;
+                p {
+                    opacity: 0;
+                    font-size: 1.4rem;
+                    color: $color-white;
+                    text-align: center;
+                    position: relative;
+                    top: 5rem;
+                    padding: 2rem;
+                    transition: all .5s;
+                }
+                .btn1 {
+                    opacity: 0;
+                    font-size: 1.4rem;
+                    color: $color-white;
+                    text-align: center;
+                    position: relative;
+                    top: 4rem;
+                    padding: 1rem 1.4rem;
+                    width: 40%;
+                    transition: all .5s;
+                    @include btn__solo;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    background-image: linear-gradient(
+                    to right,
+                    rgba($color-secondary, .8),
+                    rgba($color-secondary-dark, .8)),
+                    url(../images/shop__item2.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    p {
+                        opacity: 1;
+                    }
+                    .btn1 {
+                        opacity: 1;
+                    }
+                }
+                }
+                &--item3 {
+                    position: relative;
+                    top: 5rem;
+                    background-image: linear-gradient(
+                    to right,
+                    rgba($color-secondary, .3),
+                    rgba($color-secondary-dark, .3)),
+                    url(../images/shop__item3.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    cursor: pointer;
+                    transition: all .5s;
+                    p {
+                        opacity: 0;
+                        font-size: 1.4rem;
+                        color: $color-white;
+                        text-align: center;
+                        position: relative;
+                        top: 5rem;
+                        padding: 2rem;
+                        transition: all .5s;
+                    }
+                    .btn1 {
+                        opacity: 0;
+                        font-size: 1.4rem;
+                        color: $color-white;
+                        text-align: center;
+                        position: relative;
+                        top: 4rem;
+                        padding: 1rem 1.4rem;
+                        width: 40%;
+                        transition: all .5s;
+                        @include btn__solo;
+                    }
+                    &:hover {
+                        transform: scale(1.1);
+                        background-image: linear-gradient(
+                        to right,
+                        rgba($color-secondary, .8),
+                        rgba($color-secondary-dark, .8)),
+                        url(../images/shop__item3.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        p {
+                            opacity: 1;
+                        }
+                        .btn1 {
+                            opacity: 1;
+                        }
+                    }
+                    }
+                    &--item4 {
+                        position: relative;
+                        top: 0rem;
+                        left: 14rem;
+                        background-image: linear-gradient(
+                        to right,
+                        rgba($color-secondary, .3),
+                        rgba($color-secondary-dark, .3)),
+                        url(../images/shop__item4.jpg);
+                        background-size: cover;
+                        background-position: center;
+                        cursor: pointer;
+                        transition: all .5s;
+                        p {
+                            opacity: 0;
+                            font-size: 1.4rem;
+                            color: $color-white;
+                            text-align: center;
+                            position: relative;
+                            top: 5rem;
+                            padding: 2rem;
+                            transition: all .5s;
+                        }
+                        .btn1 {
+                            opacity: 0;
+                            font-size: 1.4rem;
+                            color: $color-white;
+                            text-align: center;
+                            position: relative;
+                            top: 4rem;
+                            padding: 1rem 1.4rem;
+                            width: 40%;
+                            transition: all .5s;
+                            @include btn__solo;
+                        }
+                        &:hover {
+                            transform: scale(1.1);
+                            background-image: linear-gradient(
+                            to right,
+                            rgba($color-secondary, .8),
+                            rgba($color-secondary-dark, .8)),
+                            url(../images/shop__item4.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            p {
+                                opacity: 1;
+                            }
+                            .btn1 {
+                                opacity: 1;
+                            }
+                        }
+                        }
+                        &--item5 {
+                            position: relative;
+                            top: 0rem;
+                            left: 14rem;
+                            background-image: linear-gradient(
+                            to right,
+                            rgba($color-secondary, .3),
+                            rgba($color-secondary-dark, .3)),
+                            url(../images/shop__item5.jpg);
+                            background-size: cover;
+                            background-position: center;
+                            cursor: pointer;
+                            transition: all .5s;
+                            p {
+                                opacity: 0;
+                                font-size: 1.4rem;
+                                color: $color-white;
+                                text-align: center;
+                                position: relative;
+                                top: 5rem;
+                                padding: 2rem;
+                                transition: all .5s;
+                            }
+                            .btn1 {
+                                opacity: 0;
+                                font-size: 1.4rem;
+                                color: $color-white;
+                                text-align: center;
+                                position: relative;
+                                top: 4rem;
+                                padding: 1rem 1.4rem;
+                                width: 40%;
+                                transition: all .5s;
+                                @include btn__solo;
+                            }
+                            &:hover {
+                                transform: scale(1.1);
+                                background-image: linear-gradient(
+                                to right,
+                                rgba($color-secondary, .8),
+                                rgba($color-secondary-dark, .8)),
+                                url(../images/shop__item5.jpg);
+                                background-size: cover;
+                                background-position: center;
+                                p {
+                                    opacity: 1;
+                                }
+                                .btn1 {
+                                    opacity: 1;
+                                }
+                            }
+                            }
+                            &--item6 {
+                                position: relative;
+                                top: 0rem;
+                                left: 14rem;
+                                background-image: linear-gradient(
+                                to right,
+                                rgba($color-secondary, .3),
+                                rgba($color-secondary-dark, .3)),
+                                url(../images/shop__item6.jpg);
+                                background-size: cover;
+                                background-position: center;
+                                cursor: pointer;
+                                transition: all .5s;
+                                p {
+                                    opacity: 0;
+                                    font-size: 1.4rem;
+                                    color: $color-white;
+                                    text-align: center;
+                                    position: relative;
+                                    top: 5rem;
+                                    padding: 2rem;
+                                    transition: all .5s;
+                                }
+                                .btn1 {
+                                    opacity: 0;
+                                    font-size: 1.4rem;
+                                    color: $color-white;
+                                    text-align: center;
+                                    position: relative;
+                                    top: 4rem;
+                                    padding: 1rem 1.4rem;
+                                    width: 40%;
+                                    transition: all .5s;
+                                    @include btn__solo;
+                                }
+                                &:hover {
+                                    transform: scale(1.1);
+                                    background-image: linear-gradient(
+                                    to right,
+                                    rgba($color-secondary, .8),
+                                    rgba($color-secondary-dark, .8)),
+                                    url(../images/shop__item6.jpg);
+                                    background-size: cover;
+                                    background-position: center;
+                                    p {
+                                        opacity: 1;
+                                    }
+                                    .btn1 {
+                                        opacity: 1;
+                                    }
+                                }
+                                }
+    }
+}
