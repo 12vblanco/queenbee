@@ -1,16 +1,21 @@
 .shop {
-    height: 80vh;
+    width: 100%;
 }
-
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: auto;
+    min-height: 80vh;
     margin: 0 auto;
+    @include respond(tp) {
+        height: 40vh;
+    }
+    @include respond(ph) {
+        
+    }
     .cafe__heading {
         margin: 0 auto;
-
+        margin-top: -3rem;
     }
-    
     &__container {
         width: 100%;
         height: auto;
@@ -19,23 +24,45 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0 4rem;
+        @include respond(tp) {
+            min-height: 640px;
+        }
+        @include respond(ph) {
+            display: block;
+        }
+
 
         &--items {
             display: inline-block;
             min-height: 64rem;
+            @include respond(ph) {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin: 0;
+            
         }
         &--item1, &--item2, &--item3, &--item4, &--item5, &--item6 {
             display: inline-block;
-            height: 600px;
-            width: 600px;
+            height: 60rem;
+            width: 60rem;
             max-width: 28rem;
             max-height: 28rem;
             overflow: hidden;
             -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
             clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
-            padding: 3px;
+            padding: 3px;     
+            @include respond(tp) {
+                max-width: 26rem;
+                max-height: 26rem;
+            }
+            @include respond(ph) {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+                max-height: 100%;
+            }
         }
-
         &--item1 {
             position: relative;
             top: 5rem;
@@ -43,12 +70,11 @@
             to right,
             rgba($color-secondary, .3),
             rgba($color-secondary-dark, .3)),
-            url(../images/shop__item1.jpg);
-            
+            url(../images/shop__item1.jpg);        
             background-size: cover;
             background-position: center;
             cursor: pointer;
-            transition: all .5s;
+            
             p {
                 opacity: 0;
                 font-size: 1.4rem;
@@ -57,7 +83,7 @@
                 position: relative;
                 top: 5rem;
                 padding: 2rem;
-                transition: all .5s;
+                transition: all .8s;
             }
             .btn1 {
                 opacity: 0;
@@ -68,12 +94,9 @@
                 top: 4rem;
                 padding: 1rem 1.4rem;
                 width: 40%;
-                transition: all .5s;
                 @include btn__solo;
             }
-            &:hover {
-                transform: scale(1.1);
-                
+            &:hover {             
                 background-image: linear-gradient(
                 to right,
                 rgba($color-secondary, .8),
@@ -89,8 +112,6 @@
                 }
             }
             }
-
-
         &--item2 {
             position: relative;
             top: 5rem;                
@@ -126,7 +147,7 @@
                 @include btn__solo;
             }
             &:hover {
-                transform: scale(1.1);
+                
                 background-image: linear-gradient(                    
                 to right,
                 rgba($color-secondary, .8),
@@ -177,7 +198,7 @@
                 @include btn__solo;
                 }
             &:hover {
-                transform: scale(1.1);
+                
                 background-image: linear-gradient(
                 to right,
                 rgba($color-secondary, .8),
@@ -229,7 +250,7 @@
                 @include btn__solo;
             }
             &:hover {
-                transform: scale(1.1);
+                
                 background-image: linear-gradient(
                 to right,
                 rgba($color-secondary, .8),
@@ -281,7 +302,7 @@
                 @include btn__solo;
             }
             &:hover {
-                transform: scale(1.1);
+                
                 background-image: linear-gradient(
                 to right,
                 rgba($color-secondary, .8),
@@ -331,23 +352,52 @@
                 width: 40%;
                 transition: all .5s;
                 @include btn__solo;
-                                }
-                                &:hover {
-                                    transform: scale(1.1);
-                                    background-image: linear-gradient(
-                                    to right,
-                                    rgba($color-secondary, .8),
-                                    rgba($color-secondary-dark, .8)),
-                                    url(../images/shop__item6.jpg);
-                                    background-size: cover;
-                                    background-position: center;
-                                    p {
-                                        opacity: 1;
-                                    }
-                                    .btn1 {
-                                        opacity: 1;
-                                    }
-                                }
-                                }
+            }
+            &:hover {    
+                background-image: linear-gradient(
+                to right,
+                rgba($color-secondary, .8),
+                rgba($color-secondary-dark, .8)),
+                url(../images/shop__item6.jpg);
+                background-size: cover;
+                background-position: center;
+                    p {
+                    opacity: 1;
+                }
+                    .btn1 {
+                        opacity: 1;
+                    }
+                }
+            }
     }
+}
+.benefits {
+    height: 45vh;
+    position: relative;
+    top: 4rem;
+    
+    &__container {
+        width: 50%;
+        height: 100%;
+        margin: 0 auto;
+        img {
+            max-width: 30rem;
+        }
+        .benefits__heading {
+            font-family: 'Lato';
+            color:$color-primary;
+            text-align: center;
+            @include footer__title;
+            margin-top: 4rem;
+        }
+        &--text {
+            color:$color-dark;
+            text-align: justify;
+            max-width: 35rem;
+            float: right;
+            @include footer__text;
+            text-transform: none;
+        }
+    }
+    
 }

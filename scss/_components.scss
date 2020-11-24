@@ -392,6 +392,19 @@
         -moz-text-fill-color: transparent;
 }
 
+// FOOTER TEXTS
+@mixin footer__title {
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba($color-white, .2);
+}
+
+@mixin footer__text {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
 // Footer
 .footer {
     margin-top: 10rem;
@@ -510,10 +523,9 @@
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
-        letter-spacing: .2rem;
+        letter-spacing: .1rem;
         min-width: 30.8rem;
         padding: 3rem 1rem 1rem 1rem;
-        font-weight: 700;
         @include respond(ph) {
             min-width: 40%;
             padding: 1.6rem 0;
@@ -524,13 +536,10 @@
             list-style: none;
         }
         &--opening {
-            font-size: 2rem;
-            color: $color-white;
-            border-bottom: 1px solid rgba($color-white, .4);
+            @include footer__title;
         }
         &--days {
-            font-size: 1.6rem;
-            margin-top: 1rem;
+            @include footer__text;
         }
         
     }
@@ -543,7 +552,7 @@
         letter-spacing: .4rem;
         min-width: 30.8rem;
         padding: 3rem 1rem 1rem 1rem;
-        font-weight: 700;
+        font-weight: 500;
 
         @include respond(ph) {
             min-width: 40%;
@@ -557,27 +566,17 @@
             list-style: none;
         }
         &--title {
-            font-size: 2rem;
-            color: $color-white;
-            border-bottom: 1px solid rgba($color-white, .4);
+            @include footer__title;
         }
         &--link {
-            font-size: 1.6rem;
-            margin-top: 1rem;
+            @include footer__text;
+
             a:link, a:visited {
                 transition: linear .3s;
                 }
                 
                 a:hover {
                     color: $color-primary;
-                }
-
-                & img {
-                    width: 4rem;
-                    position: relative;
-                    top: 0.9rem;
-                    margin-right: -.6rem;
-                    
                 }
         }
     }
@@ -594,15 +593,14 @@
         }
 
         &--title {
-            font-size: 3.2rem;
-            margin-left: 1rem;
-            letter-spacing: 0.1rem;
+            @include footer__title;
+            font-size: 2.4rem;
+            border: hidden;
         }
         
         &--discount {
-            margin: -0.6rem 1rem 1rem 1rem;
-            letter-spacing: 0.08rem;
-            font-size: 1.8rem;
+            @include footer__text;
+            font-size: 1.4rem;
             color: $color-primary;
         }
 
