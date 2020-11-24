@@ -8,6 +8,9 @@
     .cafe__heading {
         margin: 0 auto;
         margin-top: -3rem;
+        @include respond(tp) {
+            margin-top: 0;
+        }
     }
     &__container {
         width: 100%;
@@ -345,6 +348,12 @@
 .benefits {
     height: 60vh;
     margin-top: 6rem;
+    width: 100%;
+
+    @include respond(tp) {
+        text-align: center;
+        margin: 0 auto;
+    }
 
     &__heading {
         display: block;
@@ -352,7 +361,7 @@
         color: $color-primary;
         text-align: center;
         margin: 2rem;
-        font-size: 2rem;
+        font-size: 3rem;
     }
     
     &__container {
@@ -361,15 +370,33 @@
         width: 80%;
         height: 100%;
         margin: 0 auto;
-        vertical-align: middle;
-        justify-content: center;
+        
+        @include respond(tp) {
+            width: 100%;
+            flex-direction: column;
+            
+        }
+        @include respond(ph) {
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+        }
        
         img {
+            width: 38rem;
+            height: 36rem;
             max-width: 420px;
             max-height: 420px;
             margin: 0 6rem;
             box-shadow: $shadow;
             border-radius: $border-pic--l;
+            @include respond(tp) {
+                position: relative;
+                margin: 0 30%;
+                
+            }
         }
         &--text {
             color: white;
@@ -380,6 +407,10 @@
             font-size: 1.6rem;
             color: $color-dark;
             padding-top: 3rem;
+            @include respond(tp) {
+                position: relative;
+                margin: 0 30%;
+            }
         }
     }
     
