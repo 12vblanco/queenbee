@@ -1,3 +1,23 @@
+@mixin cell__text {
+    opacity: 0;
+    font-size: 1.4rem;
+    color: $color-white;
+    text-align: center;
+    position: relative;
+    top: 5rem;
+    padding: 2rem;
+    transition: all .8s;
+}
+@mixin cell__btn {
+    opacity: 0;
+    font-size: 1.4rem;
+    color: $color-white;
+    text-align: center;
+    position: relative;
+    top: 4rem;
+    padding: 1rem 1.4rem;
+    width: 40%;
+}
 .shop {
     width: 100%;
 }
@@ -35,7 +55,13 @@
             -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
             clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
             padding: 3px;     
-   
+            p {
+                @include cell__text
+            }
+            .btn1 {
+                @include cell__btn;
+                @include btn__solo;
+            }
         }
         &--item1 {
             position: relative;
@@ -49,27 +75,6 @@
             background-position: center;
             cursor: pointer;
             
-            p {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 5rem;
-                padding: 2rem;
-                transition: all .8s;
-            }
-            .btn1 {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 4rem;
-                padding: 1rem 1.4rem;
-                width: 40%;
-                @include btn__solo;
-            }
             &:hover {             
                 background-image: linear-gradient(
                 to right,
@@ -98,28 +103,7 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            p {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 5rem;
-                padding: 2rem;
-                transition: all .5s;
-            }
-            .btn1 {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 4rem;
-                padding: 1rem 1.4rem;
-                width: 40%;
-                transition: all .5s;
-                @include btn__solo;
-            }
+            
             &:hover {
                 
                 background-image: linear-gradient(                    
@@ -149,28 +133,7 @@
             background-position: center;                    
             cursor: pointer;
             transition: all .5s;
-            p {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 5rem;
-                padding: 2rem;
-                transition: all .5s;
-            }
-            .btn1 {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 4rem;
-                padding: 1rem 1.4rem;
-                width: 40%;
-                transition: all .5s;
-                @include btn__solo;
-                }
+            
             &:hover {
                 
                 background-image: linear-gradient(
@@ -201,28 +164,7 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            p {
-            opacity: 0;
-            font-size: 1.4rem;
-            color: $color-white;
-            text-align: center;
-            position: relative;
-            top: 5rem;
-            padding: 2rem;
-            transition: all .5s;
-         }
-            .btn1 {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 4rem;
-                padding: 1rem 1.4rem;
-                width: 40%;
-                transition: all .5s;
-                @include btn__solo;
-            }
+            
             &:hover {
                 
                 background-image: linear-gradient(
@@ -253,28 +195,7 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            p {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 5rem;
-                padding: 2rem;
-                transition: all .5s;
-            }
-            .btn1 {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 4rem;
-                padding: 1rem 1.4rem;
-                width: 40%;
-                transition: all .5s;
-                @include btn__solo;
-            }
+            
             &:hover {
                 
                 background-image: linear-gradient(
@@ -305,28 +226,7 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            p {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 5rem;
-                padding: 2rem;
-                transition: all .5s;
-            }
-            .btn1 {
-                opacity: 0;
-                font-size: 1.4rem;
-                color: $color-white;
-                text-align: center;
-                position: relative;
-                top: 4rem;
-                padding: 1rem 1.4rem;
-                width: 40%;
-                transition: all .5s;
-                @include btn__solo;
-            }
+            
             &:hover {    
                 background-image: linear-gradient(
                 to right,
