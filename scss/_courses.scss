@@ -5,6 +5,9 @@
     .courses__heading {
         margin-top: 0;
         font-size: 5rem;
+        @include respond(tp) {
+            margin-top: 4rem;
+        }           
     }
     &__main {
         display: flex;
@@ -12,19 +15,27 @@
         justify-content: center;
         vertical-align: middle;
         max-width: 1140px;
+        min-height: 44rem;
         margin: 0 auto;
-        height: 60vh;
+        height: auto;
         color: white;
-        margin: 6rem auto 0 auto;
+        margin: 2rem auto 2rem auto;
         padding-top: 6rem;
+        @include respond(tp) {
+            padding-top: 0;
+        }
         
         &--text {
             max-width: 60%;
             text-align: center;
+            padding-top: 4rem;
+            @include respond(tp) {
+                max-width: 60%;
+            }
             &-header {
                 font-family: $font-primary;
                 font-weight: 900;
-                font-size: 6rem;
+                font-size: 4rem;
                 background-color: $color-secondary-dark;
                 background-image: linear-gradient(-45deg, $color-secondary, $color-secondary-dark);
                 -webkit-background-clip: text;
@@ -32,12 +43,16 @@
                 -moz-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -moz-text-fill-color: transparent;    
-                text-transform: uppercase;            
+                text-transform: uppercase; 
+                
             }
             &-p{
                 color: $color-secondary-dark;
                 padding: 2rem 8rem;
-                font-size: 2rem;
+                font-size: 1.8rem;
+                @include respond(tp) {
+                    padding: 1.6rem;
+                }
             }
         }
 
@@ -52,9 +67,15 @@
     display: flex;
     justify-content: space-evenly;
     max-width: 120rem;
-    height: 40vh;
+    height: auto;
     margin: auto;
     margin-bottom: 18rem;
+    @include respond(tp) {
+        margin-bottom: 8rem;
+    }           
+    @include respond(ph) {
+        margin-bottom: 16rem;
+    }           
     .card__container {
         border-radius: $border-pic--s;
 
@@ -69,7 +90,11 @@
         box-shadow: $shadow;
         text-align: center;
         transition: all .4s ease;
-            cursor: pointer;
+        cursor: pointer;
+        @include respond(tp) {
+            width: 21rem;
+            height: 28rem;
+        }           
             &:hover {
                 transform: scale(1.06);
             }
@@ -77,6 +102,9 @@
         .fas {
             font-size: 6rem;
             margin-top: 3rem;
+            @include respond(tp) {
+                font-size: 4rem;
+            }   
         }
 
         .card {
