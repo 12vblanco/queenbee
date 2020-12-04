@@ -29,7 +29,7 @@
         margin: 0 auto;
         margin-top: -3rem;
         @include respond(tp) {
-            margin-top: 0;
+            margin-top: 4rem;
         }
     }
     &__container {
@@ -40,10 +40,17 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0 4rem;
-
+        @include respond(tp) {
+            padding: 0;
+        }
         &--items {
             display: inline-block;
             min-height: 64rem;
+            @include respond(tp) {
+                min-height: 90rem;
+                text-align: center;
+                min-height: auto;
+            }
         }
         &--item1, &--item2, &--item3, &--item4, &--item5, &--item6 {
             display: inline-block;
@@ -55,13 +62,33 @@
             -webkit-clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
             clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
             padding: 3px;     
+
+            @include respond(tp) {
+                // clip-path: none;
+                // -webkit-clip-path: none;
+                margin: 3rem;
+            }
+            @include respond(ph) {
+                max-width: 46rem;
+                max-height: 46rem;
+            }
             p {
-                @include cell__text
+                @include cell__text;
+                @include respond(ph) {
+                    font-size: 2.6rem;
+                    margin: 0.8rem;
+                }
             }
             .btn1 {
                 @include cell__btn;
                 @include btn__solo;
+                font-weight: 900;
+
+                @include respond(ph) {
+                    font-size: 2.8rem;
+                }
             }
+            
         }
         &--item1 {
             position: relative;
@@ -74,7 +101,10 @@
             background-size: cover;
             background-position: center;
             cursor: pointer;
-            
+            @include respond(tp) {
+                top: auto;
+                left: auto;
+            }
             &:hover {             
                 background-image: linear-gradient(
                 to right,
@@ -103,9 +133,11 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            
+            @include respond(tp) {
+                top: auto;
+                left: auto;
+            }
             &:hover {
-                
                 background-image: linear-gradient(                    
                 to right,
                 rgba($color-secondary, .8),
@@ -133,9 +165,11 @@
             background-position: center;                    
             cursor: pointer;
             transition: all .5s;
-            
+            @include respond(tp) {
+                top: auto;
+                left: auto;
+            }
             &:hover {
-                
                 background-image: linear-gradient(
                 to right,
                 rgba($color-secondary, .8),
@@ -164,9 +198,11 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            
+            @include respond(tp) {
+                top: auto;
+                left: auto;
+            }
             &:hover {
-                
                 background-image: linear-gradient(
                 to right,
                 rgba($color-secondary, .8),
@@ -195,9 +231,11 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            
+            @include respond(tp) {
+                top: auto;
+                left: auto;
+            }
             &:hover {
-                
                 background-image: linear-gradient(
                 to right,
                 rgba($color-secondary, .8),
@@ -226,7 +264,10 @@
             background-position: center;
             cursor: pointer;
             transition: all .5s;
-            
+            @include respond(tp) {
+                top: auto;
+                left: auto;
+            }
             &:hover {    
                 background-image: linear-gradient(
                 to right,
@@ -245,36 +286,63 @@
             }
     }
 }
-.benefits {
-    height: 60vh;
-    margin-top: 6rem;
+// VIDEO
+.promo {
     width: 100%;
+    height: 40rem;
+    padding-top: 8rem;
+    @include respond(ph) {
+        padding-top: 0rem;
+    }
+    &__container{
+        width: 54rem;
+        height: 30rem;
+        margin: 0 auto;
+        background-color: transparent;
+        &-video iframe{
+            width: 54rem !important;
+            height: 30rem !important;
+        }
+    }
+}
+
+
+// BENEFITS
+.benefits {
+    padding-top: 1rem;
+    width: 100%;
+    margin-bottom: 16rem;
 
     @include respond(tp) {
         text-align: center;
         margin: 0 auto;
+        padding-top: 2rem;
     }
-
+    @include respond(ph) {
+        padding-top: 0;
+    }
     &__heading {
         display: block;
         font-family: 'Lato';
         color: $color-primary;
         text-align: center;
-        margin: 2rem;
+        margin: 4rem;
         font-size: 3rem;
+        @include respond(tp) {
+            margin: 2rem 0 4rem 0;
+        }
     }
-    
+
     &__container {
         display: flex;
         justify-content: center;
-        width: 80%;
-        height: 100%;
+        width: 100%;
+        height: auto;
         margin: 0 auto;
         
         @include respond(tp) {
             width: 100%;
             flex-direction: column;
-            
         }
         @include respond(ph) {
             width: 100%;
@@ -282,20 +350,24 @@
             justify-content: center;
             text-align: center;
             margin: 0 auto;
+            margin-bottom: 4rem;
         }
-       
         img {
             width: 38rem;
             height: 36rem;
             max-width: 420px;
             max-height: 420px;
-            margin: 0 6rem;
+            margin: 0rem 6rem;
             box-shadow: $shadow;
             border-radius: $border-pic--l;
             @include respond(tp) {
                 position: relative;
-                margin: 0 30%;
-                
+                text-align: center;
+                margin: 0 auto;          
+                margin-bottom: 2rem;      
+            }
+            @include respond(ph) {
+                margin-bottom: 3rem;
             }
         }
         &--text {
@@ -304,14 +376,23 @@
             max-width: 50vw;
             float: right;
             @include footer__text;
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             color: $color-dark;
-            padding-top: 3rem;
+            padding-top: 7rem;
             @include respond(tp) {
                 position: relative;
-                margin: 0 30%;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 2rem;
+                max-width: 90%;
+                padding: 2rem;
+            }
+            @include respond(ph) {
+                
+                font-size: 2.4rem;
+                max-width: 90%;
+                padding: 2rem;
             }
         }
     }
-    
 }

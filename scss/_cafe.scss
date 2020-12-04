@@ -97,9 +97,10 @@
     }
 }
 .cafesection1 {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: row;
+    // margin-bottom: 9rem;
     background-image: linear-gradient(
         to right top,
         rgba($color-secondary, .7),
@@ -110,10 +111,11 @@
     color: $color-white;
 
     @include respond(ph) {
+        min-height: 60vh;
     }
 }
 .cafesection2 {
-    min-height: 90vh;
+    min-height: 89vh;
     display: flex;
     flex-direction: row;
     background-color: $color-white;
@@ -137,11 +139,25 @@
 
 .cafe__heading{
     @include main__heading;
-    margin-top: 0;
+    position: relative;
+    top: 12rem;
+    z-index: 5;
+    @include respond(tp) {
+        top: 6rem;
+    }
+    @include respond(ph) {
+        top: 10rem;
+    }
 }
 
 
 
 .footer {
-    margin-top: 4rem;
+    margin-top: -12rem;
+    @include respond(tp) {
+        margin-top: -2rem;
+    }
+    @include respond(ph) {
+        margin-top: -10rem;
+    }
 }

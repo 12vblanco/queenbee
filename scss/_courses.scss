@@ -1,0 +1,103 @@
+.courses {
+    width: 100%;
+    height: auto;
+
+    .courses__heading {
+        margin-top: 0;
+        font-size: 5rem;
+    }
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        vertical-align: middle;
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 60vh;
+        color: white;
+        margin: 6rem auto 0 auto;
+        padding-top: 6rem;
+        
+        &--text {
+            max-width: 60%;
+            text-align: center;
+            &-header {
+                font-family: $font-primary;
+                font-weight: 900;
+                font-size: 6rem;
+                background-color: $color-secondary-dark;
+                background-image: linear-gradient(-45deg, $color-secondary, $color-secondary-dark);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -moz-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -moz-text-fill-color: transparent;    
+                text-transform: uppercase;            
+            }
+            &-p{
+                color: $color-secondary-dark;
+                padding: 2rem 8rem;
+                font-size: 2rem;
+            }
+        }
+
+        &--gallery {
+            max-width: 30rem;
+            max-height: 42rem;
+        }
+    }
+    
+}
+.courses__cards {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 120rem;
+    height: 40vh;
+    margin: auto;
+    margin-bottom: 18rem;
+    .card__container {
+        border-radius: $border-pic--s;
+
+        width: 24rem;
+        height: 30rem;
+        background-color: $color-secondary-dark;
+        color: $color-white;
+        background-image: linear-gradient(
+            to right top,
+            rgba($color-secondary, .8),
+            rgba($color-secondary-dark, .8));
+        box-shadow: $shadow;
+        text-align: center;
+        transition: all .4s ease;
+            cursor: pointer;
+            &:hover {
+                transform: scale(1.06);
+            }
+
+        .fas {
+            font-size: 6rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            &__text {
+                font-size: 1.6rem;
+                padding: 2rem;
+            }
+            &__price {
+                font-size: 2rem;
+                color: $color-primary;
+            }
+            &__btn {
+                @include btn__solo;
+                max-width: 45%;
+                font-size: 1.6rem;
+                font-weight: 900;
+                color: $color-secondary-dark;
+                padding: .8rem .6rem;
+                position: relative;
+                bottom: -1rem;
+            }
+        }
+    }
+}
