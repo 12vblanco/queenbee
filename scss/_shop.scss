@@ -25,11 +25,17 @@
     width: 100%;
     height: auto;
     margin: 0 auto;
-    .cafe__heading {
+    .shop__heading {
+        @include main__heading;
         margin: 0 auto;
         margin-top: -3rem;
         @include respond(tp) {
+            margin-top: 6rem;
+            margin-bottom: 1rem;
+        }
+        @include respond(ph) {
             margin-top: 4rem;
+            margin-bottom: 6rem;
         }
     }
     &__container {

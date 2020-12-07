@@ -100,7 +100,7 @@
     min-height: 80vh;
     display: flex;
     flex-direction: row;
-    // margin-bottom: 9rem;
+    margin-top: -9rem;
     background-image: linear-gradient(
         to right top,
         rgba($color-secondary, .7),
@@ -109,19 +109,25 @@
         background-size: cover;
         background-position: center;
     color: $color-white;
+    @include respond(tp) {
+        min-height: 90vh;
+        margin-top: 4rem;
 
+    }
     @include respond(ph) {
         min-height: 60vh;
     }
 }
 .cafesection2 {
-    min-height: 89vh;
+    min-height: 70vh;
+    margin-bottom: 12rem;
     display: flex;
     flex-direction: row;
     background-color: $color-white;
     color: $color-secondary-dark;
     @include respond(tp) {
-        min-height: 740px;
+        min-height: 90vh;
+        margin-bottom: 2rem;
     }
     @include respond(ph){
     min-height: 580px;
@@ -130,6 +136,7 @@
     &__box {
         @include respond(tp) {
             flex-direction: column-reverse;
+            height: auto;
         }
         @include respond(ph) {
             flex-direction: column-reverse;
@@ -140,13 +147,13 @@
 .cafe__heading{
     @include main__heading;
     position: relative;
-    top: 12rem;
+    top: 0rem;
     z-index: 5;
     @include respond(tp) {
-        top: 6rem;
+        top: 0rem;
     }
     @include respond(ph) {
-        top: 10rem;
+        top: 0rem;
     }
 }
 

@@ -32,6 +32,7 @@ html {
     line-height: 1.6;
     color: $color-dark;
     overflow: visible;
+    scroll-behavior: smooth;
 
     @include respond(dsk) { // width < 1200?
         font-size: 56.25%; //1 rem = 9px, 9/16 = 50%

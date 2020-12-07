@@ -28,7 +28,7 @@
         flex-direction: column;
         margin-top: -4rem;
         &--text {
-            padding: 2rem;
+            padding: 2rem 2rem 0 2rem;
 
         &-header {
             font-size: 6rem;
@@ -65,11 +65,20 @@
             position: relative;
             top: -2rem;
             margin-bottom: .2rem;
+            max-width: 25%;
             @include btn;
             color: $color-white;
             background-color: transparent;
             text-transform: capitalize;
             font-weight: 500;
+            &:hover {
+                background-color: transparent;
+                box-shadow: none;
+                transition: all .6s ease;
+                .fas {
+                    color: $color-primary;
+                 }
+            }
         }
         &-tel {
             font-size: 2rem;
@@ -78,6 +87,15 @@
             top: -1.2rem;
             margin-bottom: 1rem;
             letter-spacing: 0.6rem;
+            cursor: pointer;
+            font-weight: 900;
+            a:link, a:visited {
+                color: $color-primary;
+                transition: all .2s ease-in-out;
+            }
+            a:hover {
+                color: (lighten($color-primary, $amount: 10%));
+            }            
         }
         }
 }
@@ -161,11 +179,13 @@ p {
     padding: 2rem;
 }
 
-.cafe__heading {
+.contacts__heading {
+    @include main__heading;
+
     position: relative;
-    top: 4rem;
+    top: 1rem;
     z-index: 5;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     @include respond(tp) {
         top: -2rem;
         font-size: 2.9rem;
