@@ -109,9 +109,17 @@
     width: 100%;
     position: absolute;
     left: 13rem;
-    top: 94rem;
+    top: 70rem;
     @include respond(tp) {
-        display: none;
+        top: 76rem;
+        left: 6rem;
+    }
+    @include respond(ph) {
+        left: 6rem;
+        top: 98rem;
+        img {
+            width: 30px;
+        }
     }
 }
 .bee__left2 {
@@ -128,8 +136,16 @@
     right: 13rem;
     top: 143rem;
     @include respond(tp) {
-        display: none;
+    right: 6rem;
+    top: 123rem;
     }
+    @include respond(ph) {
+        right: 2rem;
+        top: 243rem;
+        img {
+            width: 35px;
+    }
+}
 }
 
 .offers {
