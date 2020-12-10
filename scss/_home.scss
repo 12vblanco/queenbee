@@ -106,14 +106,30 @@
 }
 // Offers
 .bee__left {
+    width: 100%;
     position: absolute;
     left: 13rem;
-    top: 81rem;
+    top: 94rem;
+    @include respond(tp) {
+        display: none;
+    }
+}
+.bee__left2 {
+    position: absolute;
+    left: 5rem;
+    top: 220rem;
+    z-index: -1;
+    @include respond(tp) {
+        display: none;
+    }
 }
 .bee__right {
     position: absolute;
     right: 13rem;
-    top: 132rem;
+    top: 143rem;
+    @include respond(tp) {
+        display: none;
+    }
 }
 
 .offers {

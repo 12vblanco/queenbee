@@ -412,7 +412,13 @@
 // Footer
 .flowers {
     position: relative;
-    top: 7rem;
+    top: 8rem;
+    @include respond(tp) {
+        top: 12rem;
+        left: 4rem;
+        img {width: 32rem;}
+
+    }
 }
 .footer {
     margin-top: 10rem;
