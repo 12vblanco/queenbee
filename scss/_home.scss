@@ -109,14 +109,14 @@
     width: 100%;
     position: absolute;
     left: 13rem;
-    top: 70rem;
+    top: 76rem;
     @include respond(tp) {
         top: 76rem;
         left: 6rem;
     }
     @include respond(ph) {
-        left: 6rem;
-        top: 98rem;
+        left: 3rem;
+        top: 120rem;
         img {
             width: 30px;
         }
