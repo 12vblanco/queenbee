@@ -151,7 +151,7 @@
 .offers {
     height: auto;
     width: 100%;
-    & h1 {
+    & .main__heading {
         @include main__heading;
         @include respond(ph) {
             margin-bottom: -10rem;
@@ -420,7 +420,7 @@
 }
 }}
 // Course Preview
-h1 {
+.main__heading {
     @include main__heading;
     }
 .section {
@@ -532,10 +532,7 @@ h1 {
     margin-bottom: 16rem;
     @include respond(ph) {
    }
-h1 {
-    @include main__heading;
-    // top: -1.4rem;
-}
+
 &__container {
     display: flex;
     justify-content: space-between;
