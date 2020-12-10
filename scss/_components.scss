@@ -101,8 +101,8 @@
                     list-style: none;
 
                     .active {
-                        color: $color-primary-dark;
-                        
+                        border-bottom: solid 2px $color-primary;
+
                     }
     
                     &-item {
@@ -128,7 +128,7 @@
                         }
                         
                         a:hover {
-                            color: $color-primary;
+                            color: $color-primary-dark;
                         }
 
                         & img {
@@ -410,6 +410,10 @@
 }
 
 // Footer
+.flowers {
+    position: relative;
+    top: 7rem;
+}
 .footer {
     margin-top: 10rem;
 }
@@ -461,9 +465,6 @@
         &--img {
             &-social {
                 display: inline-block;
-                margin: .6rem 1.2rem;
-                list-style: none;
-                font-size: 3rem;
                 a:link, a:visited {
                     transition: linear .3s;
                     }

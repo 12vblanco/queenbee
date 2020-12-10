@@ -8,7 +8,7 @@
         to right top,
         rgba($color-secondary, .6),
         rgba($color-secondary-dark, .6)),
-        url(../images/home__main-bg-x1.jpg);
+        url(../images/home__main-bg-x2.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -16,9 +16,21 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     border-radius: $border-pic--l;
     overflow: hidden;
+    @include respond(tp) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
+        background-image: linear-gradient(
+            to right top,
+            rgba($color-secondary, .6),
+            rgba($color-secondary-dark, .6)),
+            url(../images/home__main-bg-x1.jpg);
+        background-size: cover;
+        background-position: center;
+    }
     @include respond(ph) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
         clip-path: polygon(0 0, 100% 0, 100% 0%, 100% 85%, 50% 92%, 0 85%);
+        background-position: 61% 39%;
     }
 
 
@@ -93,6 +105,17 @@
     }
 }
 // Offers
+.bee__left {
+    position: absolute;
+    left: 13rem;
+    top: 81rem;
+}
+.bee__right {
+    position: absolute;
+    right: 13rem;
+    top: 132rem;
+}
+
 .offers {
     height: auto;
     width: 100%;
@@ -383,7 +406,7 @@ h1 {
         to right top,
         rgba($color-secondary, .7),
         rgba($color-secondary-dark, .7)),
-        url(../images/home__coursepreview--bg-x1.jpg);
+        url(../images/home__coursepreview--bg-x2.jpg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -391,6 +414,13 @@ h1 {
     border-radius: $border-pic--s;
     @include respond(tp) {
         height: 68vh;
+        background-image: linear-gradient(
+        to right top,
+        rgba($color-secondary, .7),
+        rgba($color-secondary-dark, .7)),
+        url(../images/home__coursepreview--bg-x1.jpg);
+    background-size: cover;
+    background-position: top;
     }
     @include respond(ph) {
         width: 100%;
