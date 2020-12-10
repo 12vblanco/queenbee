@@ -147,6 +147,25 @@
     }
 }
 }
+.bee__right-footer {
+    position: absolute;
+    right: 59rem;
+    top: 273rem;
+    img{
+        width: 25px;
+    }
+    @include respond(tp) {
+    right: 6rem;
+    top: 123rem;
+    }
+    @include respond(ph) {
+        right: 2rem;
+        top: 243rem;
+        img {
+            width: 35px;
+    }
+}
+}
 
 .offers {
     height: auto;
