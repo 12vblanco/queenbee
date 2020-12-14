@@ -1,5 +1,66 @@
 @import "variables";
 
+.bee__left {
+    width: 100%;
+    position: absolute;
+    left: 13rem;
+    top: 76rem;
+    @include respond(tp) {
+        top: 76rem;
+        left: 6rem;
+    }
+    @include respond(ph) {
+        left: 3rem;
+        top: 120rem;
+        img {
+            width: 30px;
+        }
+    }
+}
+.bee__left2 {
+    position: absolute;
+    left: 5rem;
+    top: 220rem;
+    z-index: -1;
+    @include respond(tp) {
+        display: none;
+    }
+}
+.bee__right {
+    position: absolute;
+    right: 13rem;
+    top: 143rem;
+    @include respond(tp) {
+    right: 6rem;
+    top: 123rem;
+    }
+    @include respond(ph) {
+        right: 2rem;
+        top: 243rem;
+        img {
+            width: 35px;
+    }
+}
+}
+.bee__right-footer {
+    position: absolute;
+    left: 80%;
+    top: 300%;
+    
+    @include respond(tp) {
+        left: 80%;
+        top: 360%;
+    }
+    @include respond(ph) {
+        display: none;
+    }
+    img{
+        width: 60%;
+    }
+}
+
+
+
 .header {
     height: 80vh;
     background-color: $color-secondary-dark;
@@ -105,68 +166,6 @@
     }
 }
 // Offers
-.bee__left {
-    width: 100%;
-    position: absolute;
-    left: 13rem;
-    top: 76rem;
-    @include respond(tp) {
-        top: 76rem;
-        left: 6rem;
-    }
-    @include respond(ph) {
-        left: 3rem;
-        top: 120rem;
-        img {
-            width: 30px;
-        }
-    }
-}
-.bee__left2 {
-    position: absolute;
-    left: 5rem;
-    top: 220rem;
-    z-index: -1;
-    @include respond(tp) {
-        display: none;
-    }
-}
-.bee__right {
-    position: absolute;
-    right: 13rem;
-    top: 143rem;
-    @include respond(tp) {
-    right: 6rem;
-    top: 123rem;
-    }
-    @include respond(ph) {
-        right: 2rem;
-        top: 243rem;
-        img {
-            width: 35px;
-    }
-}
-}
-.bee__right-footer {
-    position: absolute;
-    right: 59rem;
-    top: 273rem;
-    img{
-        width: 60%;
-    }
-    @include respond(tp) {
-    right: 6rem;
-    top: 123rem;
-    }
-    @include respond(ph) {
-        right: 2rem;
-        top: 243rem;
-        img {
-            width: 35px;
-    }
-}
-}
-
 .offers {
     height: auto;
     width: 100%;
@@ -445,6 +444,8 @@
 .section {
     margin-top: 8rem;
 }
+
+// COURSE
 .coursepreview {
     width: 80%;
     max-width: 90rem;

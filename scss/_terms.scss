@@ -1,0 +1,64 @@
+.terms {
+    max-width: 114rem;
+    min-height: 138vh;
+    margin: 0 auto;
+    @include respond(tp){
+        min-height: 8vh;
+    }
+    @include respond(ph){
+        min-height: 80vh;
+    }
+    &__text {
+        padding-top: 1.9rem;
+        margin: 0 auto;
+        max-width: 80rem;
+        font-size: 2rem;
+        &-header {
+            text-transform: uppercase;
+            color: $color-primary;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        &-para {
+            text-align: justify;
+            margin-bottom: 2rem;
+            padding: 0 2rem;
+        }
+        &-address {
+            text-align: center;
+            list-style: none;
+            font-weight: 900;
+            margin-top: 4rem;
+        }
+    }
+    &__img {
+        width: 40rem;
+        margin: 0 auto;
+        margin-top: 4rem;
+        text-align: center;
+        
+        
+        img {
+            width: 100%;
+            height: auto;
+            box-shadow: $shadow;
+        border-radius: $border-pic--l;
+        }
+    }
+}
+.terms__bee__left {
+    position: absolute;
+    left: 10%;
+    top: 75%;
+    @include respond(ph) {
+        display: none;
+    }
+}
+.terms__bee__right {
+    position: absolute;
+    left: 82%;
+    top: 90%;
+    @include respond(ph) {
+        top: 72%;
+    }
+}

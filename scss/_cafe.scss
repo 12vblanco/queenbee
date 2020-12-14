@@ -1,4 +1,27 @@
-
+.cafe__bee__left {
+    position: absolute;
+    left: 88%;
+    top: 5%;
+    @include respond(tp) {
+        right: 99%;
+        top: 32%;
+        }
+    @include respond(ph) {
+        display: none;
+    }
+}
+.cafe__bee__right {
+    position: absolute;
+    left: 82%;
+    top: 1%;
+    @include respond(tp) {
+        right: 99%;
+        top: 1%;
+    }
+    @include respond(ph) {
+        display: none;
+    }
+}
 .cafesection1, .cafesection2 {
     width: 100%;
     margin: 0 auto;
@@ -50,7 +73,7 @@
                 margin-bottom: 3rem;
             }
             @include respond(ph) {
-                max-width: 100%;
+                max-width: 90%;
                 margin: 0 auto;
                 margin-top: 8rem;
                 

@@ -18,6 +18,25 @@
     padding: 1rem 1.4rem;
     width: 40%;
 }
+
+.shop__bee__left {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    @include respond(tp) {
+        display: none;
+        }
+    
+}
+.shop__bee__right {
+    position: absolute;
+    left: 86%;
+    top: 20%;
+    @include respond(tp) {
+        display: none;
+        }
+}
+
 .shop {
     width: 100%;
 }
