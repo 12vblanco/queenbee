@@ -398,9 +398,10 @@
         &--text {
             color: white;
             text-align: justify;
-            max-width: 50vw;
+            max-width: 30vw;
             float: right;
             @include footer__text;
+            text-transform: none;
             font-size: 1.4rem;
             color: $color-dark;
             padding-top: 7rem;
