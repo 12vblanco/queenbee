@@ -127,7 +127,7 @@
                 <form class="form" name="contact" method="POST" data-netlify="true">
 
                 <label class="container">Family Course
-                    <input type="checkbox" checked="checked">
+                    <input type="checkbox">
                     <span class="checkmark"></span>
                   </label><br>
                   
@@ -141,11 +141,15 @@
                     <span class="checkmark"></span>
                   </label><br>
                   
-                <input class="input__email" type="text" placeholder="Enter Your Name"><br>
-                <input class="input__email" type="email" placeholder="Enter Your Email"><br>
-              
-              <input class="input__submit btn--back cafesection2__text--btn" type="submit" value="Send">
-            </div>
+                  <p>
+                    <label ><input class="input__email" type="text" name="name" placeholder="Enter Your Name"required></label>   
+                  </p>
+                  <p>
+                    <label><input class="input__email" type="email" name="email" placeholder="Enter Your Email" required></label>   
+                  </p>
+                  <p>
+                    <input class="input__submit" type="submit" value="Send">
+                  </p>            </div>
             </form>
         </div>
     
