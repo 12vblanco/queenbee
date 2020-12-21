@@ -127,9 +127,15 @@
         <div class="footer__newsletter--title">Join Our Newsletter</div>
         <div class="footer__newsletter--discount">10% off on our shop when you join</div>
         <div class="info">
-            <input class="input__email" type="email" placeholder="Enter Your Email">
+            <form name="info" method="POST" data-netlify="true">
+              <p>
+                <label><input class="input__email" type="email" name="email" placeholder="Enter Your Email"/></label>
+              </p>
+              <p>
+                <button type="submit" class="input__submit btn--back">Subscribe</button>
+              </p>
+            </form>
           </div>
-          <input class="input__submit btn--back" type="submit" value="Subscribe">
     </div>
 
     <div class="footer__opening">
