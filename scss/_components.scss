@@ -55,7 +55,7 @@
                     font-family: $font-secondary;
                     text-transform: none;
                     font-size: 4.4rem;
-                    transition: all .2 ease-in;
+                    transition: all .2s ease-in;
                     @include respond(ph) {
                         font-size: 5.2rem;
 
@@ -109,7 +109,7 @@
                         display: inline-block;
                         font-size: 1.6rem;
                         font-weight: 900;
-                        font-family: 'Lato' sans-serif;
+                        font-family: $font-primary;
                         margin-right: 2rem;
                         color: $color-dark;
                         text-transform: uppercase;
@@ -319,7 +319,6 @@
         color: $color-dark;
         cursor: pointer;
         transition: all .4s ease;
-        backface-visibility: hidden;
 
         &:hover{
             box-shadow: $shadow;

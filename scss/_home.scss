@@ -4,7 +4,7 @@
     width: 100%;
     position: absolute;
     left: 13rem;
-    top: 102rem;
+    top: 98rem;
     @include respond(tp) {
         top: 96rem;
         left: 6rem;
@@ -29,7 +29,7 @@
 .bee__right {
     position: absolute;
     right: 13rem;
-    top: 143rem;
+    top: 141rem;
     @include respond(tp) {
     right: 6rem;
     top: 123rem;
