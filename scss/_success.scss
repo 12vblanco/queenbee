@@ -7,10 +7,22 @@
 .sent__message {
     font-size: 3rem;
     text-align: center;
+    @include respond (tp) {
+        font-size: 4rem;
+    }
+    @include respond (ph) {
+        font-size: 6rem;
+    }
 }
 .sent__message-sub {
     font-size: 2rem;
     padding-bottom: 1rem;
+    text-align: center;
+
+    
+    @include respond (ph) {
+        font-size: 2.6rem;
+    }
 }
 .sent__form {
     text-align: center;
@@ -22,13 +34,19 @@
     outline:none;
     padding: 1.4rem 1.6rem;
     background-color: $color-primary;
+    @include respond (tp) {
+        font-size: 3rem;
+    }
+    @include respond (ph) {
+        font-size: 4rem;
+    }
 }
 .success__bee__right {
     position: absolute;
     top: -8rem;
     left: 26rem;
-    @include respond (ph) {
+    @include respond (tp) {
         top: -18rem;
-
     }
+    
 }
