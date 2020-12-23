@@ -1,0 +1,20 @@
+.sent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.sent__message {
+    font-size: 3rem;
+}
+.sent__form {
+    text-align: center;
+}
+.input__submit {
+    @include btn__solo;
+    font-size: 1.6rem;
+    border: none;
+    outline:none;
+    padding: 1.4rem 1.6rem;
+    background-color: $color-primary;
+}
