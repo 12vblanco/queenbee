@@ -27,4 +27,8 @@
     position: absolute;
     top: -8rem;
     left: 26rem;
+    @include respond (ph) {
+        top: -18rem;
+
+    }
 }
