@@ -1,6 +1,7 @@
 .courses {
     width: 100%;
     height: auto;
+    padding-bottom: 8rem;
 
     .courses__heading {
         @include main__heading;
