@@ -77,11 +77,11 @@
                     cursor: pointer;
                     font-weight: 900;
                     a:link, a:visited {
-                        color: $color-dark;
+                        color: $color-primary;
                         transition: all .2s ease-in-out;
                     }
                     a:hover {
-                        color: (lighten($color-primary, $amount: 20%));
+                        color: (lighten($color-dark, $amount: 20%));
                     }
                     
                    }
