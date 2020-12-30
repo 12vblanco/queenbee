@@ -110,7 +110,7 @@
         box-shadow: $shadow;
         text-align: center;
         transition: all .4s ease;
-        cursor: pointer;
+        // cursor: pointer;
         @include respond(tp) {
             width: 21rem;
             height: 28rem;
