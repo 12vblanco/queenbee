@@ -91,7 +91,7 @@
             margin: 0 3rem;
             
             span {
-                color: $color-primary;
+                color: $color-secondary;
             }
             @include respond(tp) {
                 font-size: 1.8rem;
