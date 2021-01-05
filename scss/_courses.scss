@@ -116,6 +116,8 @@
             height: 28rem;
         }           
         @include respond(ph) {
+            width: 30rem;
+            height: 36rem;
             margin: 0 auto;
             margin-top: 3rem;
 
@@ -130,13 +132,20 @@
             @include respond(tp) {
                 font-size: 4rem;
             }   
+            @include respond(ph) {
+                font-size: 8rem;
+            }   
         }
 
         .card {
             &__text {
                 font-size: 1.6rem;
                 padding: 2rem;
-            }
+            
+            @include respond(ph) {
+                font-size: 2.4rem;
+            } 
+        } 
             &__price {
                 font-size: 3rem;
                 color: $color-primary;
