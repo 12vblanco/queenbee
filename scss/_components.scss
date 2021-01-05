@@ -180,7 +180,6 @@
         top: 0;
         transform: rotate(90deg);}
 
-
     &--check {
         width: 6rem;
         height: 6rem;
@@ -238,8 +237,6 @@
     
 }
 
-
-
 .menu__container {
     background: $color-bg-dark;
     border-radius: 50%;
@@ -287,8 +284,6 @@
             & a:hover {
                     color: $color-primary;
                 }
-            
-
         }
     }
     }
@@ -499,6 +494,7 @@
                     }
             }
         }
+
         .logo__img--png {
             width: 12rem;
             position: relative;
@@ -508,6 +504,7 @@
                 transform: rotate(6deg);
             }
         }
+
         .logo__text {
 
             position: relative;
@@ -563,7 +560,6 @@
         &--days {
             @include footer__text;
         }
-        
     }
 
     &__links {
@@ -583,7 +579,6 @@
             padding: 0;
         }
         
-
         li {
             list-style: none;
         }
@@ -663,6 +658,7 @@
         }
         }
     }
+
 .footer__copy {
     text-align: center;
     font-size: 1.1rem;
@@ -671,6 +667,10 @@
     color: $color-dark;
     padding: 1.2rem 0;
     transition: linear .3s;
+    @include respond(ph) {
+        font-size: 1.6rem;
+        letter-spacing: 0.3rem;
+    }
 
     a:link, a:visited {
         transition: linear .3s;
