@@ -388,6 +388,11 @@
                     @include respond(ph) {
                         left: 11rem;
                     }
+                    a {
+                        @include respond(ph) {
+                            pointer-events: none;
+                        }
+                    }
                 }
             &:hover > .card__front {
                 transform: perspective(120rem) rotateY(-180deg) scale(1.2);
