@@ -2,15 +2,8 @@
     width: 100%;
     height: auto;
     padding-bottom: 8rem;
-
-    .courses__heading {
-        @include main__heading;
-        margin-top: 0;
-        font-size: 5rem;
-        @include respond(tp) {
-            margin-top: 4rem;
-        }           
-    }
+       
+    
     &__main {
         display: flex;
         flex-direction: row;
