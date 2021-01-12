@@ -97,7 +97,7 @@
                  <p class="contact__box--text-address"><a href="#map__anchor">High Street, Melrose. Scottish Borders <i class="fas fa-map-marker-alt"></i></a></p>
                  <div class="contact__box--text-tel"><a href="tel:#">01585 45 45 45</a></div>
             </div>
-                 <div class="contact__form">
+                 <!-- <div class="contact__form">
                     <form class="form" action="/success.html" name="contact" method="POST" data-netlify="true">
                         <p class="form__heading">Please send us a message:</p>
                         <p>
@@ -119,7 +119,32 @@
                           <input class="form__submit" type="submit" value="Send">
                         </p>
                   </form>
-                </div>                 
+                </div>                  -->
+                <form name="contact" method="POST" data-netlify="true">
+
+                    <label for="firstname">First Name</label>
+                    <input type="text" id="firstname" name="firstname">
+                
+                 
+                
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" name="lastname">
+                
+                 
+                
+                    <label for="subject">Please feel free send us a message or ask any questions, we would love to hear from you.</label>
+                    <textarea id="subject" name="email" placeholder="" style="height:100px"></textarea>
+                      
+                   <input type="email" name="email" placeholder="Enter email address">
+                       <input type="submit" value="SUBSCRIBE">
+                      <br>
+                      <p>
+                    
+                       <label for="checkbox">
+                        <input class="checkbox" id="checkbox" type="checkbox" name="terms" value="Yes" required=""> I agree to the <a href="docs/terms_and_conditions.pdf"><u>terms &amp; conditions</u></a>
+                     </label>
+                   </p>
+                  </form>
         </div>
     </div>
     <div class="main__heading">If you plan to visit with a group, we can book a table for you!!</div>
